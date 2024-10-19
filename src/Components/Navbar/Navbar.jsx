@@ -169,9 +169,10 @@ const Navbar = () => {
     <nav className="bg-white shadow-md relative">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="text-gray-800 text-lg font-semibold">
-          <Link to="/">
-            Bada Bhai Hai Na <br /> (LOGO)
+        <div className="text-gray-800 text-lg font-semibold text-center">
+          <Link to="/" className="flex flex-col items-center">
+            <img src="./hug.png" alt="Logo" style={{height:"50px"}}/>
+            Bada Bhai  Hai Na
           </Link>
         </div>
 
