@@ -6,8 +6,6 @@ import {
   FaBusinessTime,
   FaShieldAlt,
 } from "react-icons/fa";
-import { useState } from "react";
-import { AiOutlineClose } from "react-icons/ai"; // Importing close icon
 
 const iconMapping = {
   "Home BT(Balance Transfer)": <FaHome className="h-5 w-5 text-purple-600" />,
@@ -36,51 +34,46 @@ const iconMapping = {
   "Home Insurance": <FaShieldAlt className="h-5 w-5 text-purple-600" />,
 };
 
-const DropDown = ({ item }) => {
+const DropDown = ({ item, categoryIcon }) => {
+  console.log(categoryIcon);
   return (
-    <div className="flex flex-col items-start">
-      <div className="text-purple-600">
-        {iconMapping[item.label] || (
-          <FaUserTie className="h-5 w-5 text-purple-600" />
-        )}
+    <>
+      {/* Dropw Down */}
+      <div className="flex flex-col items-start">
+        <div className="text-purple-600">
+          {iconMapping[item.label] || (
+            <FaUserTie className="h-5 w-5 text-purple-600" />
+          )}
+        </div>
+        <Link to="/news" className="text-gray-800 font-semibold">
+          {item.label}
+        </Link>
+        <p className="text-gray-500 text-sm">{item.description}</p>
       </div>
-      <Link to="/news" className="text-gray-800 font-semibold">
-        {item.label}
-      </Link>
-      <p className="text-gray-500 text-sm">{item.description}</p>
-    </div>
+    </>
   );
 };
 
-const Menu = ({ title, items, onClick, isMobile }) => {
+const Menu = ({ title, items }) => {
   return (
-    <div className="group ms-8 h-20 flex items-center">
-      <Link
-        to="#"
-        onClick={() => onClick(title)}
-        className="text-gray-600 hover:text-gray-800"
-      >
-        {title}
-      </Link>
+    <>
+      <div className="group h-20 flex items-center">
+        <Link to="/resources" className="text-gray-600 hover:text-gray-800">
+          {title}
+        </Link>
 
-      {/* Full-width Dropdown content (shown on hover on desktop) */}
-      {!isMobile && (
+        {/* Full-width Dropdown content (shown on hover) */}
         <div className="absolute left-0 top-full w-screen bg-white shadow-lg p-6 grid grid-cols-3 gap-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
           {items.map((item, index) => (
-            <DropDown key={index} item={item} />
+            <DropDown key={index} item={item} categoryIcon={title} />
           ))}
         </div>
-      )}
-    </div>
+      </div>
+    </>
   );
 };
 
 const Navbar = () => {
-  const [activeMenu, setActiveMenu] = useState(null);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // state for hamburger menu
-
-  const isMobile = window.innerWidth <= 768; // Adjust as needed
-  console.log(isMobileMenuOpen);
   const menuData = {
     "Home Loan": [
       {
@@ -172,96 +165,37 @@ const Navbar = () => {
     ],
   };
 
-  const handleMenuClick = (title) => {
-    if (isMobile) setActiveMenu(title);
-  };
-
-  const handleBackClick = () => {
-    setActiveMenu(null);
-  };
-
   return (
     <nav className="bg-white shadow-md relative">
-      <div
-        className={"md:container mx-auto md:flex justify-between items-center"}
-      >
+      <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="flex justify-between px-5">
-          <div className="text-gray-800 text-lg font-semibold text-center">
-            <Link to="/" className="flex flex-col items-center">
-              <img src="./hug.png" alt="Logo" style={{ height: "50px" }} />
-              Bada Bhai Hai Na
-            </Link>
-          </div>
-
-          {/* Hamburger Button for Mobile */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden block focus:outline-none"
-          >
-            {!isMobileMenuOpen ? (
-              <div className="space-y-2">
-                <span className="block w-8 h-0.5 bg-gray-800"></span>
-                <span className="block w-8 h-0.5 bg-gray-800"></span>
-                <span className="block w-8 h-0.5 bg-gray-800"></span>
-              </div>
-            ) : (
-              <AiOutlineClose className="text-2xl text-gray-800" />
-            )}
-          </button>
-        </div>
-        {/* Menu Items */}
-        <div
-          className={`${
-            isMobileMenuOpen ? "max-h-screen" : "max-h-0"
-          } md:flex space-x-8 items-center transition-max-height duration-300 ease-in-out overflow-hidden md:overflow-visible`}
-        >
-          {!activeMenu
-            ? Object.keys(menuData).map((key) => (
-                <Menu
-                  key={key}
-                  title={key}
-                  items={menuData[key]}
-                  onClick={handleMenuClick}
-                  isMobile={isMobile}
-                />
-              ))
-            : null}
-
-          {/* Contact Us Button */}
-          <Link
-            to="/contact"
-            className="hidden md:block bg-purple-600 text-white py-2 px-4 rounded-full hover:bg-purple-700"
-          >
-            Contact us
+        <div className="text-gray-800 text-lg font-semibold text-center">
+          <Link to="/" className="flex flex-col items-center">
+            <img src="./hug.png" alt="Logo" style={{height:"50px"}}/>
+            Bada Bhai  Hai Na
           </Link>
         </div>
 
-        {/* Submenu for Mobile */}
-        {isMobile && activeMenu && (
-          <div className="fixed inset-0 bg-white z-50 p-6">
-            {/* Close (Cross) Icon at the Top Right */}
-            <button
-              onClick={() => setActiveMenu(null)}
-              className="absolute top-4 right-4 text-2xl"
-            >
-              <AiOutlineClose />
-            </button>
+        {/* Menu Items */}
+        <div className="hidden md:flex space-x-8 items-center">
+          {Object.keys(menuData).map((key) => (
+            <Menu key={key} title={key} items={menuData[key]} />
+          ))}
+          <Link to="/what-we-do" className="text-gray-600 hover:text-gray-800">
+            Flexi OD
+          </Link>
+          <Link to="/who-we-help" className="text-gray-600 hover:text-gray-800">
+            Car Loan
+          </Link>
+        </div>
 
-            <button
-              onClick={handleBackClick}
-              className="text-purple-600 font-semibold mb-4"
-            >
-              &larr; Back
-            </button>
-
-            <div className="grid grid-cols-2 gap-4">
-              {menuData[activeMenu].map((item, index) => (
-                <DropDown key={index} item={item} />
-              ))}
-            </div>
-          </div>
-        )}
+        {/* Contact Us Button */}
+        <Link
+          to="/contact"
+          className="hidden md:block bg-purple-600 text-white py-2 px-4 rounded-full hover:bg-purple-700"
+        >
+          Contact us
+        </Link>
       </div>
     </nav>
   );
