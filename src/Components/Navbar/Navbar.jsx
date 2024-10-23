@@ -44,7 +44,7 @@ const DropDown = ({ item }) => {
           <FaUserTie className="h-5 w-5 text-purple-600" />
         )}
       </div>
-      <Link to="/news" className="text-gray-800 font-semibold">
+      <Link to="/" className="text-gray-800 font-semibold">
         {item.label}
       </Link>
       <p className="text-gray-500 text-sm">{item.description}</p>
@@ -54,24 +54,26 @@ const DropDown = ({ item }) => {
 
 const Menu = ({ title, items, onClick, isMobile }) => {
   return (
-    <div className="group ms-8 h-20 flex items-center">
-      <Link
-        to="#"
-        onClick={() => onClick(title)}
-        className="text-gray-600 hover:text-gray-800"
-      >
-        {title}
-      </Link>
+    <>
+      <div className="group ms-8 h-20 flex items-center">
+        <Link
+          to="/"
+          onClick={() => onClick(title)}
+          className="text-gray-600 hover:text-gray-800"
+        >
+          {title}
+        </Link>
 
-      {/* Full-width Dropdown content (shown on hover on desktop) */}
-      {!isMobile && (
-        <div className="absolute left-0 top-full w-screen bg-white shadow-lg p-6 grid grid-cols-3 gap-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
-          {items.map((item, index) => (
-            <DropDown key={index} item={item} />
-          ))}
-        </div>
-      )}
-    </div>
+        {/* Full-width Dropdown content (shown on hover on desktop) */}
+        {!isMobile && (
+          <div className="absolute left-0 top-full w-screen bg-white shadow-lg p-6 grid grid-cols-3 gap-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+            {items.map((item, index) => (
+              <DropDown key={index} item={item} />
+            ))}
+          </div>
+        )}
+      </div>
+    </>
   );
 };
 
@@ -227,6 +229,20 @@ const Navbar = () => {
                 />
               ))
             : null}
+
+          {/* Flexi OD Button */}
+          <div className="group ms-8 h-20 flex items-center">
+            <Link to="/" className="text-gray-600 hover:text-gray-800">
+              Flexi OD
+            </Link>
+          </div>
+
+          {/* Car Loan Button */}
+          <div className="group ms-8 h-20 flex items-center">
+            <Link to="/" className="text-gray-600 hover:text-gray-800">
+              Car Loan
+            </Link>
+          </div>
 
           {/* Contact Us Button */}
           <Link

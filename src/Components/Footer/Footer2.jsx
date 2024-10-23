@@ -86,6 +86,13 @@ const menuData = {
       description: "Safeguard your home with reliable home insurance policies.",
     },
   ],
+  "More Services": [{
+    label: "Flexi OD",
+    description: "Earn interest on your savings with flexible repayment options.",
+  }, {
+    label: "Car Loan",
+    description: "Get a car loan with better terms and options.",
+  }]
 };
 
 export default function Footer() {
@@ -94,9 +101,9 @@ export default function Footer() {
       <footer className="bg-gray-800 text-gray-100 p-10">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 mb-8">
           {/* Loan Categories */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-3">
             <h3 className="text-xl font-semibold mb-4">Loan Categories</h3>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <ul className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {Object.keys(menuData).map((category, idx) => (
                 <li key={idx} className="mb-2">
                   <h4 className="text-purple-400 font-semibold">{category}</h4>
@@ -111,23 +118,6 @@ export default function Footer() {
                   </ul>
                 </li>
               ))}
-            </ul>
-          </div>
-
-          {/* More Services */}
-          <div>
-            <h3 className="text-xl font-semibold mb-4">More Services</h3>
-            <ul>
-              <li className="mb-2">
-                <Link to="/flexi-od" className="hover:underline">
-                  Flexi OD
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link to="/car-loan" className="hover:underline">
-                  Car Loan
-                </Link>
-              </li>
             </ul>
           </div>
 
