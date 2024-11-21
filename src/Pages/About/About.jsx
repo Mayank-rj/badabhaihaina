@@ -1,5 +1,5 @@
 // src/pages/AboutUs.js
-import React from "react";
+import heroImg from "/images/about-hero.jpg";
 
 const AboutUs = () => {
   const companyName = "[Your Company Name]";
@@ -10,7 +10,7 @@ const AboutUs = () => {
       <div
         className="relative bg-cover bg-center h-[70vh] flex items-center justify-center"
         style={{
-          backgroundImage: "url('about-hero')",
+          backgroundImage: `url(${heroImg})`,
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -68,7 +68,7 @@ const AboutUs = () => {
             className="flex flex-col lg:flex-row-reverse items-center gap-8"
           >
             <img
-              src="https://via.placeholder.com/500x300"
+              src="https://static.bankbazaar.com/images/gateway/bb-gateway-cs-v3.png"
               alt="Our Mission"
               className="rounded-lg shadow-lg lg:w-1/2"
             />
