@@ -2,7 +2,7 @@
 import heroImg from "/images/about/images/about-hero2.jpg";
 
 const AboutUs = () => {
-  const companyName = "[Your Company Name]";
+  const companyName = "Bada BHai Hai Na";
 
   return (
     <div>
