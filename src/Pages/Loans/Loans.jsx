@@ -11,7 +11,7 @@ export default function Loans({ type }) {
       ) : type === "compare-home-loan" ? (
         <CompareHomeLoan />
       ) : (
-        type === "new-user"
+        "Loans"
       )}
     </>
   );
