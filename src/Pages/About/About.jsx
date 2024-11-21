@@ -1,5 +1,5 @@
 // src/pages/AboutUs.js
-import heroImg from "/images/about-hero.jpg";
+import heroImg from "/images/about/images/about-hero2.jpg";
 
 const AboutUs = () => {
   const companyName = "[Your Company Name]";
@@ -36,9 +36,9 @@ const AboutUs = () => {
             className="flex flex-col lg:flex-row items-center gap-8"
           >
             <img
-              src="https://via.placeholder.com/500x300"
+              src="/images/about/images/about-intro.jpg"
               alt="About Us"
-              className="rounded-lg shadow-lg lg:w-1/2"
+              className="rounded-lg lg:w-1/2"
             />
             <div>
               <h2 className="text-4xl font-bold text-indigo-700 mb-6 text-center lg:text-left">
@@ -68,9 +68,9 @@ const AboutUs = () => {
             className="flex flex-col lg:flex-row-reverse items-center gap-8"
           >
             <img
-              src="https://static.bankbazaar.com/images/gateway/bb-gateway-cs-v3.png"
+              src="/images/about/images/about-mission.jpg"
               alt="Our Mission"
-              className="rounded-lg shadow-lg lg:w-1/2"
+              className="rounded-lg lg:w-1/2"
             />
             <div>
               <h2 className="text-3xl font-semibold text-indigo-700 mb-4 text-center lg:text-left">
@@ -90,9 +90,9 @@ const AboutUs = () => {
             className="flex flex-col lg:flex-row items-center gap-8"
           >
             <img
-              src="https://via.placeholder.com/500x300"
+              src="/images/about/images/about-vission.jpg"
               alt="Our Vision"
-              className="rounded-lg shadow-lg lg:w-1/2"
+              className="rounded-lg lg:w-1/2"
             />
             <div>
               <h2 className="text-3xl font-semibold text-indigo-700 mb-4 text-center lg:text-left">
