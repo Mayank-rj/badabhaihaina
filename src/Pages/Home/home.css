@@ -1,0 +1,19 @@
+.hero-img {
+  background-image: url("../../../public/home-img/hero-sec.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.tag-line {
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  /* border: 3px solid #f1f1f1; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

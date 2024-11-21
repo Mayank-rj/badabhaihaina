@@ -5,34 +5,52 @@ import {
   FaUserTie,
   FaBusinessTime,
   FaShieldAlt,
+  FaHandshake,
+  FaLaptopHouse,
 } from "react-icons/fa";
 import { useState } from "react";
+import { IoPersonSharp } from "react-icons/io5";
+import { IoLocation } from "react-icons/io5";
+import { IoMdPersonAdd } from "react-icons/io";
+import { TbSettingsDollar } from "react-icons/tb";
+// import { FaHandshake } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai"; // Importing close icon
+import { HiSwitchHorizontal } from "react-icons/hi";
+import { BsFillHousesFill } from "react-icons/bs";
+import { BiSolidDonateHeart } from "react-icons/bi";
+import { menuData } from "../../assets/menuData";
+import { RiCarFill } from "react-icons/ri";
+import { MdHealthAndSafety } from "react-icons/md";
+import { MdTwoWheeler } from "react-icons/md";
 
 const iconMapping = {
   "Home BT(Balance Transfer)": <FaHome className="h-5 w-5 text-purple-600" />,
   "Compare Home Loan Rate": (
-    <FaMoneyBillWave className="h-5 w-5 text-purple-600" />
+    <FaLaptopHouse className="h-5 w-5 text-purple-600" />
+    // <FaMoneyBillWave className="h-5 w-5  text-purple-600" />
   ),
-  "New User": <FaUserTie className="h-5 w-5 text-purple-600" />,
+  "New User": <IoMdPersonAdd className="h-5 w-5 text-purple-600" />,
   "Personal BT(Balance Transfer)": (
-    <FaHome className="h-5 w-5 text-purple-600" />
+    <IoPersonSharp className="h-5 w-5 text-purple-600" />
   ),
   "Compare Personal Loan Rate": (
-    <FaMoneyBillWave className="h-5 w-5 text-purple-600" />
+    <HiSwitchHorizontal className="h-5 w-5 text-purple-600" />
+    // <FaMoneyBillWave className="h-5 w-5 text-purple-600" />
   ),
   "Unsecured Business Loan": (
     <FaBusinessTime className="h-5 w-5 text-purple-600" />
   ),
-  "Term Loan": <FaMoneyBillWave className="h-5 w-5 text-purple-600" />,
-  "Working Capital": <FaBusinessTime className="h-5 w-5 text-purple-600" />,
+  "Term Loan": <FaHandshake className="h-5 w-5 text-purple-600" />,
+  "Working Capital": <TbSettingsDollar className="h-5 w-5 text-purple-600" />,
   "MSME Loan": <FaUserTie className="h-5 w-5 text-purple-600" />,
   Insurance: <FaShieldAlt className="h-5 w-5 text-purple-600" />,
-  "Term Life Insurance": <FaShieldAlt className="h-5 w-5 text-purple-600" />,
-  "Car Insurance": <FaShieldAlt className="h-5 w-5 text-purple-600" />,
-  "Health Insurance": <FaShieldAlt className="h-5 w-5 text-purple-600" />,
-  "Two Wheeler Insurance": <FaShieldAlt className="h-5 w-5 text-purple-600" />,
-  "Travel Insurance": <FaShieldAlt className="h-5 w-5 text-purple-600" />,
+  "Term Life Insurance": (
+    <BiSolidDonateHeart className="h-5 w-5 text-purple-600" />
+  ),
+  "Car Insurance": <RiCarFill className="h-5 w-5 text-purple-600" />,
+  "Health Insurance": <MdHealthAndSafety className="h-5 w-5 text-purple-600" />,
+  "Two Wheeler Insurance": <MdTwoWheeler className="h-5 w-5 text-purple-600" />,
+  "Travel Insurance": <IoLocation className="h-5 w-5 text-purple-600" />,
   "Home Insurance": <FaShieldAlt className="h-5 w-5 text-purple-600" />,
 };
 
@@ -66,7 +84,7 @@ const Menu = ({ title, items, onClick, isMobile }) => {
 
         {/* Full-width Dropdown content (shown on hover on desktop) */}
         {!isMobile && (
-          <div className="absolute left-0 top-full w-screen bg-white shadow-lg p-6 grid grid-cols-3 gap-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+          <div className="absolute z-10 left-0 top-full w-screen bg-white shadow-lg p-6 grid grid-cols-3 gap-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
             {items.map((item, index) => (
               <DropDown key={index} item={item} />
             ))}
@@ -83,114 +101,6 @@ const Navbar = () => {
 
   const isMobile = window.innerWidth <= 768; // Adjust as needed
   console.log(isMobileMenuOpen);
-  const menuData = {
-    "Home Loan": [
-      {
-        label: "Home BT(Balance Transfer)",
-        description: "All the latest updates about Home BT in one place.",
-        path: "/home-bt",
-      },
-      {
-        label: "Compare Home Loan Rate",
-        description: "Compare rates from multiple providers instantly.",
-        path: "/compare-home-loan-rate",
-      },
-      {
-        label: "New User",
-        description: "Get started with your first home loan application today.",
-        path: "/new-user-home-loan",
-      },
-    ],
-    "Personal Loan": [
-      {
-        label: "Personal BT(Balance Transfer)",
-        description: "Transfer your personal loan at lower interest rates.",
-        path: "/personal-bt",
-      },
-      {
-        label: "Compare Personal Loan Rate",
-        description: "Find the best personal loan rates tailored to you.",
-        path: "/compare-personal-loan-rate",
-      },
-      {
-        label: "New User",
-        description: "Start your personal loan journey with our experts.",
-        path: "/new-user-personal-loan",
-      },
-    ],
-    "Unsecured Business Loan": [
-      {
-        label: "Term Loan",
-        description: "Get funding for business needs with flexible terms.",
-        path: "/term-loan",
-      },
-      {
-        label: "Working Capital",
-        description:
-          "Ensure liquidity for daily operations with working capital loans.",
-        path: "/working-capital",
-      },
-      {
-        label: "MSME Loan",
-        description:
-          "Special loans tailored for Micro, Small, and Medium Enterprises.",
-        path: "/msme-loan",
-      },
-    ],
-    "Loan Against Property": [
-      {
-        label: "Home BT(Balance Transfer)",
-        description: "Refinance your loan against property with better terms.",
-        path: "/home-bt-loan-against-property",
-      },
-      {
-        label: "Compare Loan Against Property Rate",
-        description: "Evaluate the best rates for loans against property.",
-        path: "/compare-loan-against-property-rate",
-      },
-      {
-        label: "New User",
-        description: "Get assistance with your first loan against property.",
-        path: "/new-user-loan-against-property",
-      },
-    ],
-    Insurance: [
-      {
-        label: "Term Life Insurance",
-        description:
-          "Secure your loved ones with comprehensive term life plans.",
-        path: "/term-life-insurance",
-      },
-      {
-        label: "Car Insurance",
-        description:
-          "Get coverage for your vehicle with top car insurance plans.",
-        path: "/car-insurance",
-      },
-      {
-        label: "Health Insurance",
-        description: "Protect your health with our range of insurance plans.",
-        path: "/health-insurance",
-      },
-      {
-        label: "Two Wheeler Insurance",
-        description: "Affordable insurance for your bike or scooter.",
-        path: "/two-wheeler-insurance",
-      },
-      {
-        label: "Travel Insurance",
-        description:
-          "Ensure peace of mind on your travels with travel insurance.",
-        path: "/travel-insurance",
-      },
-      {
-        label: "Home Insurance",
-        description:
-          "Safeguard your home with reliable home insurance policies.",
-        path: "/home-insurance",
-      },
-    ],
-  };
 
   const handleMenuClick = (title) => {
     if (isMobile) setActiveMenu(title);
