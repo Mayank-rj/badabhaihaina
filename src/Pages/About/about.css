@@ -1,0 +1,5 @@
+@media (max-width: 640px) {
+  .mobile-heading {
+    font-size: 1.9rem; /* Adjust as needed */
+  }
+}

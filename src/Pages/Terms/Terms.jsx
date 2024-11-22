@@ -13,7 +13,7 @@ const TermsAndConditions = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
       {/* Hero Section */}
-      <div className="bg-indigo-600 text-white py-20 text-center">
+      <div className="bg-purple-600 text-white py-20 text-center">
         <h1 className="text-4xl font-bold">Terms and Conditions</h1>
         <p className="mt-4 text-lg">
           Welcome to {websiteName}. Last Updated: {lastUpdated}
@@ -24,7 +24,7 @@ const TermsAndConditions = () => {
       <div className="container mx-auto px-6 py-12 lg:px-20 bg-white shadow-lg rounded-lg mt-6">
         <div className="space-y-10">
           <section>
-            <h2 className="text-2xl font-semibold text-indigo-700">
+            <h2 className="text-2xl font-semibold text-purple-600">
               1. Acceptance of Terms
             </h2>
             <p className="text-gray-700 mt-2">
@@ -35,7 +35,7 @@ const TermsAndConditions = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-indigo-700">
+            <h2 className="text-2xl font-semibold text-purple-600">
               2. Services
             </h2>
             <p className="text-gray-700 mt-2">
@@ -47,7 +47,7 @@ const TermsAndConditions = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-indigo-700">
+            <h2 className="text-2xl font-semibold text-purple-600">
               3. User Responsibilities
             </h2>
             <ul className="list-disc pl-6 mt-2 text-gray-700">
@@ -67,7 +67,7 @@ const TermsAndConditions = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-indigo-700">
+            <h2 className="text-2xl font-semibold text-purple-600">
               4. Intellectual Property
             </h2>
             <p className="text-gray-700 mt-2">
@@ -78,7 +78,7 @@ const TermsAndConditions = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-indigo-700">
+            <h2 className="text-2xl font-semibold text-purple-600">
               5. Disclaimer of Warranties
             </h2>
             <ul className="list-disc pl-6 mt-2 text-gray-700">
@@ -98,7 +98,7 @@ const TermsAndConditions = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-indigo-700">
+            <h2 className="text-2xl font-semibold text-purple-600">
               6. Limitation of Liability
             </h2>
             <p className="text-gray-700 mt-2">
@@ -110,7 +110,7 @@ const TermsAndConditions = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-indigo-700">
+            <h2 className="text-2xl font-semibold text-purple-600">
               7. Third-Party Links
             </h2>
             <p className="text-gray-700 mt-2">
@@ -121,7 +121,7 @@ const TermsAndConditions = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-indigo-700">
+            <h2 className="text-2xl font-semibold text-purple-600">
               8. Payment Terms
             </h2>
             <p className="text-gray-700 mt-2">
@@ -132,7 +132,7 @@ const TermsAndConditions = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-indigo-700">
+            <h2 className="text-2xl font-semibold text-purple-600">
               9. Privacy Policy
             </h2>
             <p className="text-gray-700 mt-2">
@@ -142,7 +142,7 @@ const TermsAndConditions = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-indigo-700">
+            <h2 className="text-2xl font-semibold text-purple-600">
               10. Governing Law
             </h2>
             <p className="text-gray-700 mt-2">
@@ -153,7 +153,7 @@ const TermsAndConditions = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-indigo-700">
+            <h2 className="text-2xl font-semibold text-purple-600">
               11. Changes to Terms
             </h2>
             <p className="text-gray-700 mt-2">
@@ -165,7 +165,7 @@ const TermsAndConditions = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-indigo-700">
+            <h2 className="text-2xl font-semibold text-purple-600">
               12. Contact Information
             </h2>
             <p className="text-gray-700 mt-2">
