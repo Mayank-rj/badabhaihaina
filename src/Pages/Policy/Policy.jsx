@@ -7,8 +7,8 @@ const PrivacyPolicy = () => {
   const contactAddress = "[your physical address]";
 
   return (
-    <div className="p-10 bg-gray-100">
-      <div className="max-w-5xl mx-auto bg-white p-8 shadow-lg rounded-lg">
+    <div className="p-10 bg-gray-100 min-h-screen">
+      <div className="md:max-w-5xl md:mx-auto md:bg-white md:p-8 md:shadow-lg md:rounded-lg">
         <h1 className="text-4xl font-bold text-indigo-700 mb-6 text-center">
           Privacy Policy
         </h1>
