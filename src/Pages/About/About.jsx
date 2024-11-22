@@ -2,7 +2,7 @@
 import heroImg from "/images/about/images/about-hero2.jpg";
 
 const AboutUs = () => {
-  const companyName = "Bada BHai Hai Na";
+  const companyName = "Bada Bhai Hai Na";
 
   return (
     <div>
@@ -21,9 +21,9 @@ const AboutUs = () => {
           <p className="text-lg lg:text-xl font-medium mb-6">
             Empowering your financial success with tailored solutions.
           </p>
-          <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300">
+          {/* <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300">
             Learn More About Us
-          </button>
+          </button> */}
         </div>
       </div>
 
