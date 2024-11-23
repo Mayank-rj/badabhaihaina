@@ -20,7 +20,7 @@ const AboutUs = () => {
             Welcome to {companyName}
           </h1> */}
           <h1 className="font-bold mb-4 mobile-heading sm:text-5xl lg:text-6xl">
-            Welcome to {companyName}
+            Welcome to <span className="block sm:inline"> {companyName}</span>
           </h1>
 
           <p className="text-lg lg:text-xl font-medium mb-6">

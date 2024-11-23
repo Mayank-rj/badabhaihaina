@@ -1,27 +1,28 @@
 const PrivacyPolicy = () => {
-  const companyName = "[Your Company Name]";
-  const effectiveDate = "[Insert Date]";
+  const companyName = "Bada Bhai Hai Na";
+  const effectiveDate = "13-11-2024";
   const websiteURL = "[website URL]";
   const contactEmail = "[your email]";
-  const contactPhone = "[your phone number]";
-  const contactAddress = "[your physical address]";
+  const contactPhone = "+91 98734 23583";
+  const contactAddress = "T-6, Kallu Sarai, Anupam Plaza, New Delhi 110016";
 
   return (
-    <div className="p-10 bg-gray-100 min-h-screen">
-      <div className="md:max-w-5xl md:mx-auto md:bg-white md:p-8 md:shadow-lg md:rounded-lg">
-        <h1 className="text-4xl font-bold text-purple-600 mb-6 text-center">
-          Privacy Policy
-        </h1>
-        <p className="text-gray-700 mb-4 text-center">
+    <div className="bg-gray-100 min-h-screen">
+      <div className="bg-purple-600 text-white py-20 text-center">
+        <h1 className="text-4xl font-bold">Privacy Policy</h1>
+        <p className="mt-4 text-lg">
           <strong>Effective Date:</strong> {effectiveDate}
         </p>
+      </div>
 
+      {/* <div className="md:max-w-5xl md:mx-auto md:bg-white md:p-8 md:shadow-lg md:rounded-lg"> */}
+      <div className="container mx-auto px-6 py-12 lg:px-20 bg-white shadow-lg rounded-lg my-6">
         {/* Section 1 */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-2xl font-semibold text-purple-600">
             1. Introduction
           </h2>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed mt-2">
             {companyName} (referred to as “we,” “us,” or “our”) is committed to
             protecting your privacy. This Privacy Policy explains how we
             collect, use, and safeguard your information when you visit our
@@ -33,10 +34,10 @@ const PrivacyPolicy = () => {
 
         {/* Section 2 */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-2xl font-semibold text-purple-600">
             2. Information We Collect
           </h2>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed mt-2">
             We may collect and process the following types of information:
           </p>
           <ul className="list-disc list-inside text-gray-700 mt-4">
@@ -60,10 +61,10 @@ const PrivacyPolicy = () => {
 
         {/* Section 3 */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-2xl font-semibold text-purple-600">
             3. How We Use Your Information
           </h2>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed mt-2">
             We use the information we collect for the following purposes:
           </p>
           <ul className="list-disc list-inside text-gray-700 mt-4">
@@ -79,10 +80,10 @@ const PrivacyPolicy = () => {
 
         {/* Section 4 */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-2xl font-semibold text-purple-600">
             4. Sharing Your Information
           </h2>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed mt-2">
             We may share your information with:
           </p>
           <ul className="list-disc list-inside text-gray-700 mt-4">
@@ -100,10 +101,10 @@ const PrivacyPolicy = () => {
 
         {/* Remaining Sections */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-2xl font-semibold text-purple-600">
             5. Cookies and Tracking Technologies
           </h2>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed mt-2">
             We use cookies and similar tracking technologies to track activity
             on our Site and hold certain information. You can instruct your
             browser to refuse all cookies or indicate when a cookie is being
@@ -113,10 +114,10 @@ const PrivacyPolicy = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-2xl font-semibold text-purple-600">
             6. Data Security
           </h2>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed mt-2">
             The security of your data is important to us. While we strive to use
             commercially acceptable means to protect your personal information,
             we cannot guarantee its absolute security.
@@ -124,10 +125,10 @@ const PrivacyPolicy = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-2xl font-semibold text-purple-600">
             7. Your Data Protection Rights
           </h2>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed mt-2">
             Depending on your location, you may have the right to access,
             update, delete, or object to the processing of your personal data.
             To exercise these rights, please contact us at {contactEmail}.
@@ -135,10 +136,10 @@ const PrivacyPolicy = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-2xl font-semibold text-purple-600">
             8. Links to Other Sites
           </h2>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed mt-2">
             Our Site may contain links to other sites that are not operated by
             us. We strongly advise you to review the Privacy Policy of any
             third-party site you visit.
@@ -146,10 +147,10 @@ const PrivacyPolicy = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-2xl font-semibold text-purple-600">
             9. Changes to This Privacy Policy
           </h2>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed mt-2">
             We may update our Privacy Policy from time to time. You are advised
             to review this page periodically for any changes. Changes are
             effective when posted.
@@ -157,10 +158,10 @@ const PrivacyPolicy = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-2xl font-semibold text-purple-600">
             10. Contact Us
           </h2>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed mt-2">
             If you have any questions, please contact us:
           </p>
           <ul className="list-disc list-inside text-gray-700 mt-4">

@@ -2,26 +2,24 @@
 import React from "react";
 
 const TermsAndConditions = () => {
-  const companyName = "[Your Company Name]";
+  const companyName = "Bada Bhai Hai Na";
   const websiteName = "[Website Name]";
   const websiteURL = "[Website URL]";
   const emailAddress = "[Your Email Address]";
-  const phoneNumber = "[Your Phone Number]";
-  const lastUpdated = "[Date]";
-  const governingLaw = "[Your State or Country]";
+  const phoneNumber = "+91 98734 23583";
+  const lastUpdated = "14-11-2024";
+  const governingLaw = "Delhi";
 
   return (
     <div className="bg-gray-100 min-h-screen">
       {/* Hero Section */}
       <div className="bg-purple-600 text-white py-20 text-center">
         <h1 className="text-4xl font-bold">Terms and Conditions</h1>
-        <p className="mt-4 text-lg">
-          Welcome to {websiteName}. Last Updated: {lastUpdated}
-        </p>
+        <p className="mt-4 text-lg">Last Updated: {lastUpdated}</p>
       </div>
 
       {/* Content Section */}
-      <div className="container mx-auto px-6 py-12 lg:px-20 bg-white shadow-lg rounded-lg mt-6">
+      <div className="container mx-auto px-6 py-12 lg:px-20 bg-white shadow-lg rounded-lg my-6">
         <div className="space-y-10">
           <section>
             <h2 className="text-2xl font-semibold text-purple-600">
