@@ -169,11 +169,6 @@ const CarLoan = () => {
           </p>
         </section>
       </main>
-
-      {/* Footer */}
-      <footer className="text-center bg-blue-700 text-white py-4 mt-8">
-        © 2024 Bada Bhai Hai Na. All Rights Reserved.
-      </footer>
     </div>
   );
 };
