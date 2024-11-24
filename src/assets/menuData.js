@@ -54,11 +54,6 @@ export const menuData = {
   ],
   "Loan Against Property": [
     {
-      label: "Home BT(Balance Transfer)",
-      description: "Refinance your loan against property with better terms.",
-      path: "/home-bt-loan-against-property",
-    },
-    {
       label: "Compare Loan Against Property Rate",
       description: "Evaluate the best rates for loans against property.",
       path: "/compare-loan-against-property-rate",

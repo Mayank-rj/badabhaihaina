@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <div className="container relative">
-        <div className="h-[70vh] flex justify-center items-center w-screen hero-img " />
+        <div className="h-[70vh] flex justify-center items-center w-screen hero-img" />
         <div className="tag-line">
           <p className="text-6xl">Where Money Works for You!</p>
         </div>
