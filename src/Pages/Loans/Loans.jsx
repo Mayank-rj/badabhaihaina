@@ -1,6 +1,6 @@
 import React from "react";
 import CarLoan from "../../Components/CarLoan/CarLoan";
-import { CompareHomeLoan } from "../../Components/CompareHomeLoan/CompareHomeLoan";
+import CompareHomeLoan from "../../Components/CompareHomeLoan/CompareHomeLoan";
 import HomeBt from "../../Components/HomeBt/HomeBt";
 
 export default function Loans({ type }) {
