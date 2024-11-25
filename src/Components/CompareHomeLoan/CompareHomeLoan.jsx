@@ -1,5 +1,5 @@
 import { useInView } from "react-intersection-observer";
-import "./CompareHomeLoan.css";
+// import "./CompareHomeLoan.css";
 
 const AnimatedSection = ({ children, animationClass }) => {
   const { ref, inView } = useInView({ triggerOnce: true });
@@ -33,7 +33,7 @@ const CompareHomeLoan = () => {
             </h2>
             <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0">
               <img
-                src="/images/compare home/compare-intro.jpg"
+                src="/images/home loan/01.jpg"
                 alt="Home Loan Guide"
                 className="w-full max-w-2xl h-auto mb-4 md:mb-0 md:mr-6 rounded-lg shadow-xl"
               />
@@ -92,7 +92,7 @@ const CompareHomeLoan = () => {
             <div className="flex flex-col md:flex-row-reverse items-center md:items-start space-y-6 md:space-y-0">
               {/* Image */}
               <img
-                src="/images/compare home/compare-key.jpg"
+                src="/images/home loan/02.jpg"
                 alt="Why Consider Balance Transfer"
                 className="w-full max-w-xs h-auto mb-4 md:mb-0 md:ml-6 rounded-lg shadow-xl"
               />
@@ -175,7 +175,7 @@ const CompareHomeLoan = () => {
             </h2>
             <div className="flex flex-col items-center space-y-6">
               <img
-                src="/images/compare home/compare-popular.jpg"
+                src="/images/home loan/03.jpg"
                 alt="Considerations for Balance Transfer"
                 className="w-full h-auto rounded-lg shadow-xl max-w-xl"
               />
@@ -213,7 +213,7 @@ const CompareHomeLoan = () => {
             </h2>
             <div className="flex flex-col md:flex-row items-center md:items-start mb-7 space-y-6 md:space-y-0">
               <img
-                src="/images/home loan/images/bank.jpg"
+                src="/images/home loan/04.jpg"
                 alt="Transfer Home Loan"
                 className="w-full max-w-md h-auto mb-4 md:mb-0 md:mr-6 rounded-lg shadow-xl"
               />
@@ -272,19 +272,20 @@ const CompareHomeLoan = () => {
             </div>
           </section>
         </AnimatedSection>
-
-        <section className=" w-full max-w-4xl  text-center animate-fadeIn mb-10">
-          <h2 className="text-3xl text-blue-600 font-semibold mb-4">
-            Conclusion
-          </h2>
-          <p className="text-black-300 leading-relaxed mb-6">
-            Comparing home loans is a smart move to make informed financial
-            decisions. Take time to analyze your options and choose a loan that
-            offers the perfect balance of affordability and benefits. For
-            personalized assistance in finding the best home loan, contact us
-            today!
-          </p>
-        </section>
+        <AnimatedSection animationClass="animate-slide-in-left">
+          <section className="w-full text-center animate-fadeIn mb-10">
+            <h2 className="text-3xl text-blue-600 font-semibold mb-4">
+              Conclusion
+            </h2>
+            <p className="text-black-300 leading-relaxed mb-6">
+              Comparing home loans is a smart move to make informed financial
+              decisions. Take time to analyze your options and choose a loan
+              that offers the perfect balance of affordability and benefits. For
+              personalized assistance in finding the best home loan, contact us
+              today!
+            </p>
+          </section>
+        </AnimatedSection>
       </div>
     </div>
   );

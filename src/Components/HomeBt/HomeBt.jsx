@@ -1,5 +1,5 @@
 import { useInView } from "react-intersection-observer";
-import "./animation.css";
+// import "./animation.css";
 
 const AnimatedSection = ({ children, animationClass }) => {
   const { ref, inView } = useInView({ triggerOnce: true });
@@ -33,7 +33,7 @@ const HomeBt = () => {
             </h2>
             <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0">
               <img
-                src="/images/home loan/images/housing-loan-4385135_1280.jpg"
+                src="/images/home loan/05.jpg"
                 alt="Home Loan Guide"
                 className="w-full max-w-2xl h-auto mb-4 md:mb-0 md:mr-6 rounded-lg shadow-xl"
               />
@@ -75,7 +75,7 @@ const HomeBt = () => {
             <div className="flex flex-col md:flex-row-reverse items-center md:items-start space-y-6 md:space-y-0">
               {/* Image */}
               <img
-                src="/images/home loan/images/whySec.jpg"
+                src="/images/home loan/06.jpg"
                 alt="Why Consider Balance Transfer"
                 className="w-full max-w-2xl h-auto mb-4 md:mb-0 md:ml-6 rounded-lg shadow-xl"
               />
@@ -131,7 +131,7 @@ const HomeBt = () => {
             </h2>
             <div className="flex flex-col md:flex-row-reverse items-center md:items-start space-y-6 md:space-y-0 ">
               <img
-                src="/images/home loan/images/consider.jpg"
+                src="/images/home loan/07.jpg"
                 alt="Considerations for Balance Transfer"
                 className="w-full h-auto mb-4 md:mb-0 md:ml-6 rounded-lg shadow-xl max-w-xs"
               />
@@ -166,7 +166,7 @@ const HomeBt = () => {
             </h2>
             <div className="flex flex-col md:flex-row items-center md:items-start mb-7 space-y-6 md:space-y-0">
               <img
-                src="/images/home loan/images/bank.jpg"
+                src="/images/home loan/04.jpg"
                 alt="Transfer Home Loan"
                 className="w-full max-w-md h-auto mb-4 md:mb-0 md:mr-6 rounded-lg shadow-xl"
               />

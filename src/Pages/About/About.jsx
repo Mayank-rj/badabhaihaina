@@ -1,5 +1,5 @@
 // src/pages/AboutUs.js
-import heroImg from "/images/about/images/about-hero2.jpg";
+import heroImg from "/images/about/about-hero.jpg";
 import "./about.css";
 
 const AboutUs = () => {
@@ -41,7 +41,7 @@ const AboutUs = () => {
             className="flex flex-col lg:flex-row items-center gap-8 w-full"
           >
             <img
-              src="/images/about/images/about-intro.jpg"
+              src="/images/about/01.jpg"
               alt="About Us"
               className="rounded-lg lg:w-1/2 w-full"
             />
@@ -73,7 +73,7 @@ const AboutUs = () => {
             className="flex flex-col lg:flex-row-reverse items-center gap-8 w-full"
           >
             <img
-              src="/images/about/images/about-mission.jpg"
+              src="/images/about/02.jpg"
               alt="Our Mission"
               className="rounded-lg lg:w-1/2 w-full"
             />
@@ -95,7 +95,7 @@ const AboutUs = () => {
             className="flex flex-col lg:flex-row items-center gap-8 w-full"
           >
             <img
-              src="/images/about/images/about-vission.jpg"
+              src="/images/about/03.jpg"
               alt="Our Vision"
               className="rounded-lg lg:w-1/2 w-full"
             />

@@ -1,7 +1,7 @@
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Contact = () => {
   const [popupVisible, setPopupVisible] = useState(false);
@@ -15,16 +15,18 @@ const Contact = () => {
     message: Yup.string().required("Message is required"),
   });
 
-  // Handle form submission
-  const handleSubmit = (values) => {
-    console.log("Form submitted:", values);
+  useEffect(() => {
+    if (popupVisible) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
 
-    setPopupVisible(true);
-
-    resetForm();
-
-    setTimeout(() => setPopupVisible(false), 3000);
-  };
+    // Cleanup when the component unmounts
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [popupVisible]);
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-100 p-8">
@@ -64,7 +66,12 @@ const Contact = () => {
             message: "",
           }}
           validationSchema={validationSchema}
-          onSubmit={handleSubmit}
+          onSubmit={(values, { resetForm }) => {
+            console.log("Form submitted:", values);
+            setPopupVisible(true);
+            resetForm();
+            setTimeout(() => setPopupVisible(false), 3000);
+          }}
         >
           {({ touched, errors }) => (
             <Form className="space-y-4">
@@ -174,7 +181,7 @@ const Contact = () => {
 
       {/* Popup Message */}
       {popupVisible && (
-        <div className="absolute inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded-md shadow-lg text-center max-w-sm">
             <h3 className="text-xl font-semibold text-purple-600">
               Thank You!

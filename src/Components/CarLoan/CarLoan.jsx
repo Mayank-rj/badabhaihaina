@@ -1,4 +1,3 @@
-import React from "react";
 import "./carLoan.css";
 
 const CarLoan = () => {
@@ -26,7 +25,7 @@ const CarLoan = () => {
         </p>
         <div className="relative group">
           <img
-            src="/images/Car Loan/carloan-intro.jpg"
+            src="/images/Car Loan/01.jpg"
             alt="Car Loan Introduction"
             className="rounded-lg shadow-lg w-full transition-transform duration-300 group-hover:scale-105"
           />
@@ -71,7 +70,7 @@ const CarLoan = () => {
             ))}
           </ul>
           <img
-            src="/images/Car Loan/what.jpg"
+            src="/images/Car Loan/02.jpg"
             alt="Factors to Know"
             className="rounded-lg max-w-xs shadow-lg transition-transform duration-300 hover:scale-105"
           />
@@ -85,7 +84,7 @@ const CarLoan = () => {
         </h2>
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <img
-            src="/images/Car Loan/where.jpg"
+            src="/images/Car Loan/03.jpg"
             alt="Where to Get Car Loan"
             className="rounded-lg shadow-lg w-full lg:w-1/2 transition-transform duration-300 hover:scale-105"
           />
@@ -111,7 +110,7 @@ const CarLoan = () => {
           budget, you can secure the most affordable and convenient car loan.
         </p>
         <img
-          src="/images/Car Loan/conclusion.jpg"
+          src="/images/Car Loan/04.jpg"
           alt="Conclusion"
           className="rounded-lg shadow-lg w-full transition-transform duration-300 hover:scale-105"
         />
