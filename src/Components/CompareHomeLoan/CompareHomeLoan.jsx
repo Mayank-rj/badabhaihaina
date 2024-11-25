@@ -48,7 +48,7 @@ const CompareHomeLoan = () => {
           </section>
         </AnimatedSection>
 
-        {/* why is commpare Home Loan */}
+        {/* why commpare Home Loan */}
         <AnimatedSection animationClass="animate-slide-in-right">
           <section className="mb-20">
             <h2 className="text-2xl font-semibold text-blue-600 mb-10">
@@ -83,7 +83,7 @@ const CompareHomeLoan = () => {
           </section>
         </AnimatedSection>
 
-        {/* Why Should You Consider */}
+        {/* key factors*/}
         <AnimatedSection animationClass="animate-fade-in">
           <section className="mb-20">
             <h2 className="text-2xl font-semibold text-blue-600 text-center mb-10">
@@ -99,7 +99,7 @@ const CompareHomeLoan = () => {
               {/* Text Content */}
               <ul className="space-y-4 text-lg text-gray-700 leading-relaxed mt-4 md:mr-6">
                 <li>
-                  <strong className="text-blue-700">Interest Rates:</strong>{" "}
+                  <strong className="text-blue-700">Interest Rates:</strong>
                   Choose between fixed interest rates (constant throughout the
                   tenure) or floating interest rates (which vary with market
                   conditions).
@@ -107,7 +107,7 @@ const CompareHomeLoan = () => {
                 <li>
                   <strong className="text-blue-700">
                     Loan-to-Value (LTV) Ratio:
-                  </strong>{" "}
+                  </strong>
                   Understand the percentage of the property value the bank is
                   willing to finance. Higher LTV ratios mean lower upfront
                   payments for you.
@@ -115,21 +115,21 @@ const CompareHomeLoan = () => {
                 <li>
                   <strong className="text-blue-700">
                     Processing Fees and Charges:
-                  </strong>{" "}
+                  </strong>
                   These can range from 0.5% to 2% of the loan amount. Check for
                   waivers or discounts from lenders.
                 </li>
                 <li>
                   <strong className="text-blue-700">
                     Prepayment and Foreclosure Policies:
-                  </strong>{" "}
+                  </strong>
                   Ensure the lender allows you to repay the loan early with
                   minimal penalties.
                 </li>
                 <li>
                   <strong className="text-blue-700">
                     Eligibility Criteria:
-                  </strong>{" "}
+                  </strong>
                   Different lenders have varying requirements for income, credit
                   score, and age. Compare these to see where you fit best.
                 </li>
@@ -138,7 +138,7 @@ const CompareHomeLoan = () => {
           </section>
         </AnimatedSection>
 
-        {/* How Does it Work */}
+        {/* Compare Home Loans */}
         <AnimatedSection animationClass="animate-slide-in-left">
           <section className="mb-20">
             <h2 className="text-2xl font-semibold text-blue-600 text-center mb-10">
