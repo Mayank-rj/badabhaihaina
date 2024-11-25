@@ -1,36 +1,26 @@
 export const menuData = {
   "Home Loan": [
     {
-      label: "Home BT(Balance Transfer)",
-      description: "All the latest updates about Home BT in one place.",
-      path: "/home-bt",
+      label: "Home Loan",
+      description: "All the latest updates about Home Loan in one place.",
+      path: "/home-loan",
     },
     {
       label: "Compare Home Loan Rate",
       description: "Compare rates from multiple providers instantly.",
       path: "/compare-home-loan-rate",
     },
-    {
-      label: "New User",
-      description: "Get started with your first home loan application today.",
-      path: "/new-user-home-loan",
-    },
   ],
   "Personal Loan": [
     {
-      label: "Personal BT(Balance Transfer)",
+      label: "Personal Loan",
       description: "Transfer your personal loan at lower interest rates.",
-      path: "/personal-bt",
+      path: "/personal-loan",
     },
     {
       label: "Compare Personal Loan Rate",
       description: "Find the best personal loan rates tailored to you.",
       path: "/compare-personal-loan-rate",
-    },
-    {
-      label: "New User",
-      description: "Start your personal loan journey with our experts.",
-      path: "/new-user-personal-loan",
     },
   ],
   "Unsecured Business Loan": [
@@ -54,14 +44,15 @@ export const menuData = {
   ],
   "Loan Against Property": [
     {
+      label: "Loan Against Property",
+      description:
+        "Leverage your property for a loan with flexible repayment options.",
+      path: "/loan-against-property",
+    },
+    {
       label: "Compare Loan Against Property Rate",
       description: "Evaluate the best rates for loans against property.",
       path: "/compare-loan-against-property-rate",
-    },
-    {
-      label: "New User",
-      description: "Get assistance with your first loan against property.",
-      path: "/new-user-loan-against-property",
     },
   ],
   Insurance: [
@@ -96,6 +87,18 @@ export const menuData = {
       label: "Home Insurance",
       description: "Safeguard your home with reliable home insurance policies.",
       path: "/home-insurance",
+    },
+    {
+      label: "Stock Insurance",
+      description:
+        "Protect your investments with comprehensive stock insurance plans.",
+      path: "/stock-insurance",
+    },
+    {
+      label: "Corporate Insurance",
+      description:
+        "Secure your business with tailored corporate insurance solutions.",
+      path: "/corporate-insurance",
     },
   ],
 };

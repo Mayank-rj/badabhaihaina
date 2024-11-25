@@ -27,32 +27,24 @@ const router = createBrowserRouter([
         element: <Loans type="home" />, // You can pass type as a prop to differentiate
       },
       {
-        path: "home-bt",
-        element: <Loans type="home-bt" />,
+        path: "home-loan",
+        element: <Loans type="home-loan" />,
       },
       {
         path: "compare-home-loan-rate",
         element: <Loans type="compare-home-loan" />,
       },
       {
-        path: "new-user-home-loan",
-        element: <Loans type="new-user-home-loan" />,
-      },
-      {
         path: "personal-loan",
         element: <Loans type="personal" />,
       },
       {
-        path: "personal-bt",
-        element: <Loans type="personal-bt" />,
+        path: "personal-loan",
+        element: <Loans type="personal-loan" />,
       },
       {
         path: "compare-personal-loan-rate",
         element: <Loans type="compare-personal-loan" />,
-      },
-      {
-        path: "new-user-personal-loan",
-        element: <Loans type="new-user-personal-loan" />,
       },
       {
         path: "unsecured-business-loan",
@@ -75,16 +67,8 @@ const router = createBrowserRouter([
         element: <Loans type="loan-against-property" />,
       },
       {
-        path: "home-bt-loan-against-property",
-        element: <Loans type="home-bt" />,
-      },
-      {
         path: "compare-loan-against-property-rate",
         element: <Loans type="compare-loan-against-property" />,
-      },
-      {
-        path: "new-user-loan-against-property",
-        element: <Loans type="new-user-loan-against-property" />,
       },
       {
         path: "insurance",
@@ -113,6 +97,14 @@ const router = createBrowserRouter([
       {
         path: "home-insurance",
         element: <Insurance type="home" />,
+      },
+      {
+        path: "stock-insurance",
+        element: <Insurance type="stock-insurance" />,
+      },
+      {
+        path: "Corporate-insurance",
+        element: <Insurance type="Corporate-insurance" />,
       },
       {
         path: "flexi-od",
