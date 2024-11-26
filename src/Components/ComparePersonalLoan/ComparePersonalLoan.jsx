@@ -33,7 +33,7 @@ const ComparePersonalLoan = () => {
             </h2>
             <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0">
               <img
-                src="/images/home loan/01.jpg"
+                src="/images/compare personal loan/01.jpg"
                 alt="Personal Loan Guide"
                 className="w-full max-w-2xl h-auto mb-4 md:mb-0 md:mr-6 rounded-lg shadow-xl"
               />
@@ -73,10 +73,9 @@ const ComparePersonalLoan = () => {
                   favorable terms.
                 </li>
                 <li>
-                  <strong>Maximize Benefits:</strong> Some loans come with
-                  perks like cashback, free insurance, or balance transfer
-                  options. Comparing ensures you don’t miss out on these
-                  advantages.
+                  <strong>Maximize Benefits:</strong> Some loans come with perks
+                  like cashback, free insurance, or balance transfer options.
+                  Comparing ensures you don’t miss out on these advantages.
                 </li>
               </ul>
             </div>
@@ -91,7 +90,7 @@ const ComparePersonalLoan = () => {
             </h2>
             <div className="flex flex-col md:flex-row-reverse items-center md:items-start space-y-6 md:space-y-0">
               <img
-                src="/images/home loan/02.jpg"
+                src="/images/compare personal loan/02.jpg"
                 alt="Key Factors"
                 className="w-full max-w-xs h-auto mb-4 md:mb-0 md:ml-6 rounded-lg shadow-xl"
               />
@@ -116,7 +115,9 @@ const ComparePersonalLoan = () => {
                   penalties.
                 </li>
                 <li>
-                  <strong className="text-blue-700">Eligibility Criteria:</strong>{" "}
+                  <strong className="text-blue-700">
+                    Eligibility Criteria:
+                  </strong>{" "}
                   Verify requirements such as income, employment, and credit
                   score to identify suitable options.
                 </li>
@@ -160,7 +161,7 @@ const ComparePersonalLoan = () => {
             </h2>
             <div className="flex flex-col items-center space-y-6">
               <img
-                src="/images/home loan/03.jpg"
+                src="/images/compare personal loan/03.jpg"
                 alt="Popular Schemes"
                 className="w-full h-auto rounded-lg shadow-xl max-w-xl"
               />

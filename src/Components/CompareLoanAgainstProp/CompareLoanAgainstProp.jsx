@@ -33,7 +33,7 @@ const CompareLoanAgainstProp = () => {
             </h2>
             <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0">
               <img
-                src="/images/home loan/01.jpg"
+                src="/images/compare loan against property Rate/01.jpg"
                 alt="Loan Against Property Guide"
                 className="w-full max-w-2xl h-auto mb-4 md:mb-0 md:mr-6 rounded-lg shadow-xl"
               />
@@ -86,7 +86,7 @@ const CompareLoanAgainstProp = () => {
             </h2>
             <div className="flex flex-col md:flex-row-reverse items-center md:items-start space-y-6 md:space-y-0">
               <img
-                src="/images/home loan/02.jpg"
+                src="/images/compare loan against property Rate/02.jpg"
                 alt="Key Factors for Loan Against Property"
                 className="w-full max-w-xs h-auto mb-4 md:mb-0 md:ml-6 rounded-lg shadow-xl"
               />
@@ -165,7 +165,7 @@ const CompareLoanAgainstProp = () => {
             </h2>
             <div className="flex flex-col items-center space-y-6">
               <img
-                src="/images/home loan/03.jpg"
+                src="/images/compare loan against property Rate/03.jpg"
                 alt="Popular LAP Schemes"
                 className="w-full h-auto rounded-lg shadow-xl max-w-xl"
               />

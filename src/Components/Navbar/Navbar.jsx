@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import {
   FaHome,
-  FaMoneyBillWave,
   FaUserTie,
   FaBusinessTime,
   FaShieldAlt,
