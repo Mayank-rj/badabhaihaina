@@ -15,23 +15,21 @@ import { TbSettingsDollar } from "react-icons/tb";
 // import { FaHandshake } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai"; // Importing close icon
 import { HiSwitchHorizontal } from "react-icons/hi";
-import { BsFillHousesFill } from "react-icons/bs";
+import { BsFillBuildingsFill } from "react-icons/bs";
 import { BiSolidDonateHeart } from "react-icons/bi";
 import { menuData } from "../../assets/menuData";
-import { RiCarFill } from "react-icons/ri";
+import { RiCarFill, RiMoneyRupeeCircleFill } from "react-icons/ri";
 import { MdHealthAndSafety } from "react-icons/md";
 import { MdTwoWheeler } from "react-icons/md";
 
 const iconMapping = {
-  "Home BT(Balance Transfer)": <FaHome className="h-5 w-5 text-purple-600" />,
+  "Home Loan": <FaHome className="h-5 w-5 text-purple-600" />,
   "Compare Home Loan Rate": (
     <FaLaptopHouse className="h-5 w-5 text-purple-600" />
     // <FaMoneyBillWave className="h-5 w-5  text-purple-600" />
   ),
   "New User": <IoMdPersonAdd className="h-5 w-5 text-purple-600" />,
-  "Personal BT(Balance Transfer)": (
-    <IoPersonSharp className="h-5 w-5 text-purple-600" />
-  ),
+  "Personal Loan": <IoPersonSharp className="h-5 w-5 text-purple-600" />,
   "Compare Personal Loan Rate": (
     <HiSwitchHorizontal className="h-5 w-5 text-purple-600" />
     // <FaMoneyBillWave className="h-5 w-5 text-purple-600" />
@@ -50,7 +48,16 @@ const iconMapping = {
   "Health Insurance": <MdHealthAndSafety className="h-5 w-5 text-purple-600" />,
   "Two Wheeler Insurance": <MdTwoWheeler className="h-5 w-5 text-purple-600" />,
   "Travel Insurance": <IoLocation className="h-5 w-5 text-purple-600" />,
-  "Home Insurance": <FaShieldAlt className="h-5 w-5 text-purple-600" />,
+  "Home Insurance": <FaHome className="h-5 w-5 text-purple-600" />,
+  "Stock Insurance": (
+    <RiMoneyRupeeCircleFill className="h-5 w-5 text-purple-600" />
+  ),
+  "Loan Against Property": (
+    <BsFillBuildingsFill className="h-5 w-5 text-purple-600" />
+  ),
+  "Compare Loan Against Property Rate": (
+    <HiSwitchHorizontal className="h-5 w-5 text-purple-600" />
+  ),
 };
 
 const DropDown = ({ item }) => {

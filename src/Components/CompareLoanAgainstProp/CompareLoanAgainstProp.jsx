@@ -99,27 +99,27 @@ const CompareLoanAgainstProp = () => {
                 <li>
                   <strong className="text-blue-700">
                     Loan-to-Value (LTV):
-                  </strong>{" "}
+                  </strong>
                   Check the maximum loan amount you can secure based on your
                   property value.
                 </li>
                 <li>
                   <strong className="text-blue-700">
                     Processing Fees and Charges:
-                  </strong>{" "}
+                  </strong>
                   Look for lenders offering low or waived processing fees.
                 </li>
                 <li>
                   <strong className="text-blue-700">
                     Repayment Flexibility:
-                  </strong>{" "}
+                  </strong>
                   Evaluate loan tenures and prepayment options for added
                   convenience.
                 </li>
                 <li>
                   <strong className="text-blue-700">
                     Eligibility Criteria:
-                  </strong>{" "}
+                  </strong>
                   Check income, credit score, and property ownership
                   requirements for different lenders.
                 </li>
@@ -171,17 +171,17 @@ const CompareLoanAgainstProp = () => {
               />
               <ul className="list-disc list-inside text-lg text-gray-700 leading-relaxed mt-4">
                 <li>
-                  <strong className="text-blue-700">SBI LAP:</strong>{" "}
+                  <strong className="text-blue-700">SBI LAP:</strong>
                   Competitive rates with flexible repayment options.
                 </li>
                 <li>
                   <strong className="text-blue-700">
                     HDFC Property Loans:
-                  </strong>{" "}
+                  </strong>
                   Tailored solutions for self-employed and salaried individuals.
                 </li>
                 <li>
-                  <strong className="text-blue-700">Axis Bank LAP:</strong>{" "}
+                  <strong className="text-blue-700">Axis Bank LAP:</strong>
                   Attractive rates with top-up loan options.
                 </li>
                 <li>

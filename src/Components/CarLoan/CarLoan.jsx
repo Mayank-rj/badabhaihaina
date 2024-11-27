@@ -1,3 +1,4 @@
+import { Cta } from "../cta/Cta";
 import "./carLoan.css";
 
 const CarLoan = () => {
@@ -76,6 +77,14 @@ const CarLoan = () => {
           />
         </div>
       </section>
+
+      <Cta
+        heading="Take the Next Step Toward Your Dream Car"
+        message="Drive your dream car without breaking the bank! Explore our tailored
+            car loan options with competitive interest rates, flexible tenures,
+            and minimal paperwork. Let us help you hit the road faster and
+            smarter."
+      />
 
       {/* Lenders Section */}
       <section className="mt-10 w-full max-w-4xl animate-fadeIn">

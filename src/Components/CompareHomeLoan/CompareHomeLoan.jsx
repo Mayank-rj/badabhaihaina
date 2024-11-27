@@ -1,4 +1,5 @@
 import { useInView } from "react-intersection-observer";
+import { Cta } from "../cta/Cta";
 // import "./CompareHomeLoan.css";
 
 const AnimatedSection = ({ children, animationClass }) => {
@@ -137,6 +138,11 @@ const CompareHomeLoan = () => {
             </div>
           </section>
         </AnimatedSection>
+
+        <Cta
+          heading="Find Your Perfect Fit for a Dream Home"
+          message="Explore and compare the best home loan options tailored to your needs. Secure the perfect loan to make your dream home a reality!"
+        />
 
         {/* Compare Home Loans */}
         <AnimatedSection animationClass="animate-slide-in-left">
