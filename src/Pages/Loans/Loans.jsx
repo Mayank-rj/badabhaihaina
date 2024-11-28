@@ -1,17 +1,16 @@
-import React from "react";
 import CarLoan from "../../Components/CarLoan/CarLoan";
 import CompareHomeLoan from "../../Components/CompareHomeLoan/CompareHomeLoan";
-import NewUser from "../../Components/NewUser/NewUser";
 import ComparePersonalLoan from "../../Components/ComparePersonalLoan/ComparePersonalLoan";
 import CompareLoanAgainstProp from "../../Components/CompareLoanAgainstProp/CompareLoanAgainstProp";
 import HomeLoan from "../../Components/HomeLoan/HomeLoan";
 import PersonalLoan from "../../Components/PerosnalLoan/PersonalLoan";
+import LoanAgainstProperty from "../../Components/LoanAgainstProp/LoanAgainstProp";
 
 export default function Loans({ type }) {
   console.log(type);
   return (
     <>
-      {type === "home" ? (
+      {type === "home-loan" ? (
         <HomeLoan />
       ) : type === "compare-home-loan" ? (
         <CompareHomeLoan />
@@ -21,8 +20,10 @@ export default function Loans({ type }) {
         <CompareLoanAgainstProp />
       ) : type === "car" ? (
         <CarLoan />
-      ) : type === "personal" ? (
+      ) : type === "personal-loan" ? (
         <PersonalLoan />
+      ) : type === "loan-against-property" ? (
+        <LoanAgainstProperty />
       ) : (
         "Loans"
       )}

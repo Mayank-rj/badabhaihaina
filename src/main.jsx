@@ -24,19 +24,11 @@ const router = createBrowserRouter([
       },
       {
         path: "home-loan",
-        element: <Loans type="home" />, // You can pass type as a prop to differentiate
-      },
-      {
-        path: "home-loan",
         element: <Loans type="home-loan" />,
       },
       {
         path: "compare-home-loan-rate",
         element: <Loans type="compare-home-loan" />,
-      },
-      {
-        path: "personal-loan",
-        element: <Loans type="personal" />,
       },
       {
         path: "personal-loan",
