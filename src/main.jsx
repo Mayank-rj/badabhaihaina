@@ -44,7 +44,7 @@ const router = createBrowserRouter([
       },
       {
         path: "term-loan",
-        element: <Loans type="term" />,
+        element: <Loans type="term-loan" />,
       },
       {
         path: "working-capital",
