@@ -33,17 +33,17 @@ const TermLoan = () => {
             </h2>
             <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0">
               <img
-                src="/images/term-loan/intro.jpg"
+                src="/images/term loan/01.jpg"
                 alt="Term Loan Introduction"
                 className="w-full max-w-2xl h-auto mb-4 md:mb-0 md:mr-6 rounded-lg shadow-xl"
               />
               <p className="text-gray-700 text-lg leading-relaxed mt-4">
-                A <strong className="text-blue-700">Term Loan</strong> is a type of unsecured loan where borrowers
-                receive a lump sum of money from a lender and agree to pay it
-                back in installments over a specified term. Unlike secured
-                loans, Term Loans do not require collateral. In India, term
-                loans are typically used for business expansion, asset
-                purchases, or personal use.
+                A <strong className="text-blue-700">Term Loan</strong> is a type
+                of unsecured loan where borrowers receive a lump sum of money
+                from a lender and agree to pay it back in installments over a
+                specified term. Unlike secured loans, Term Loans do not require
+                collateral. In India, term loans are typically used for business
+                expansion, asset purchases, or personal use.
               </p>
             </div>
           </section>
@@ -101,7 +101,7 @@ const TermLoan = () => {
             </h2>
             <div className="flex flex-col md:flex-row-reverse items-center md:items-start space-y-6 md:space-y-0">
               <img
-                src="/images/term-loan/factors.jpg"
+                src="/images/term loan/02.jpg"
                 alt="Key Factors for Term Loan"
                 className="w-full max-w-xs h-auto mb-4 md:mb-0 md:ml-6 rounded-lg shadow-xl"
               />
@@ -181,7 +181,7 @@ const TermLoan = () => {
             </h2>
             <div className="flex flex-col items-center space-y-6">
               <img
-                src="/images/term-loan/providers.jpg"
+                src="/images/term loan/03.jpg"
                 alt="Popular Term Loan Providers"
                 className="w-full h-auto rounded-lg shadow-xl max-w-xl"
               />
@@ -217,12 +217,13 @@ const TermLoan = () => {
               Conclusion
             </h2>
             <p className="text-black-300 leading-relaxed mb-6">
-              Comparing <strong className="text-blue-700">Term Loans</strong> across different lenders can help you
-              secure the best interest rates and terms suited to your needs. By
-              understanding key factors such as eligibility, loan amount, and
-              repayment flexibility, you can make a well-informed decision and
-              manage your finances better. For expert assistance, reach out to
-              us today to find the ideal term loan option for you!
+              Comparing <strong className="text-blue-700">Term Loans</strong>{" "}
+              across different lenders can help you secure the best interest
+              rates and terms suited to your needs. By understanding key factors
+              such as eligibility, loan amount, and repayment flexibility, you
+              can make a well-informed decision and manage your finances better.
+              For expert assistance, reach out to us today to find the ideal
+              term loan option for you!
             </p>
           </section>
         </AnimatedSection>

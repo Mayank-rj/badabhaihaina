@@ -32,18 +32,18 @@ const PersonalLoan = () => {
             </h2>
             <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0">
               <img
-                src="/images/personal-loan/intro.jpg"
+                src="/images/personal loan/01.jpg"
                 alt="Personal Loan Introduction"
-                className="w-full max-w-2xl h-auto mb-4 md:mb-0 md:mr-6 rounded-lg shadow-xl"
+                className="w-full max-w-xs h-auto mb-4 md:mb-0 md:mr-6 rounded-lg shadow-xl"
               />
               <p className="text-gray-700 text-lg leading-relaxed mt-4">
                 A personal loan is a versatile financial tool designed to meet
                 your immediate monetary needs. Whether it's for a wedding,
                 travel, medical emergencies, or debt consolidation, personal
-                loans provide quick access to funds without requiring collateral.
-                With competitive interest rates and flexible repayment options,
-                personal loans are an ideal choice for fulfilling short-term
-                financial goals.
+                loans provide quick access to funds without requiring
+                collateral. With competitive interest rates and flexible
+                repayment options, personal loans are an ideal choice for
+                fulfilling short-term financial goals.
               </p>
             </div>
           </section>
@@ -63,7 +63,9 @@ const PersonalLoan = () => {
                 Enjoy hassle-free processing with minimal documentation.
               </li>
               <li>
-                <strong className="text-blue-700">2. No Collateral Needed:</strong>{" "}
+                <strong className="text-blue-700">
+                  2. No Collateral Needed:
+                </strong>{" "}
                 Avail of loans without pledging any assets or property.
               </li>
               <li>
@@ -90,9 +92,9 @@ const PersonalLoan = () => {
             </h2>
             <div className="flex flex-col md:flex-row-reverse items-center md:items-start space-y-6 md:space-y-0">
               <img
-                src="/images/personal-loan/types.jpg"
+                src="/images/personal loan/02.jpg"
                 alt="Types of Personal Loans"
-                className="w-full max-w-2xl h-auto mb-4 md:mb-0 md:ml-6 rounded-lg shadow-xl"
+                className="w-full max-w-xs h-auto mb-4 md:mb-0 md:ml-6 rounded-lg shadow-xl"
               />
               <ul className="space-y-4 text-lg text-gray-700 leading-relaxed mt-4 md:mr-6">
                 <li>
@@ -133,7 +135,10 @@ const PersonalLoan = () => {
                 Submit the application form with required documents such as ID,
                 address, and income proof.
               </li>
-              <li>Wait for approval and receive disbursal directly in your account.</li>
+              <li>
+                Wait for approval and receive disbursal directly in your
+                account.
+              </li>
             </ol>
           </section>
         </AnimatedSection>
@@ -146,12 +151,14 @@ const PersonalLoan = () => {
             </h2>
             <ul className="list-disc list-inside text-lg text-gray-700 leading-relaxed">
               <li>
-                <strong className="text-blue-700">Improve Your CIBIL Score:</strong>{" "}
+                <strong className="text-blue-700">
+                  Improve Your CIBIL Score:
+                </strong>{" "}
                 A score above 750 ensures better offers.
               </li>
               <li>
-                <strong className="text-blue-700">Compare Offers:</strong>{" "}
-                Use online tools to find the best interest rates.
+                <strong className="text-blue-700">Compare Offers:</strong> Use
+                online tools to find the best interest rates.
               </li>
               <li>
                 <strong className="text-blue-700">Borrow Responsibly:</strong>{" "}

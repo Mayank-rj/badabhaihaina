@@ -94,9 +94,9 @@ const HomeLoan = () => {
             <div className="flex flex-col md:flex-row-reverse items-center md:items-start space-y-6 md:space-y-0">
               {/* Image */}
               <img
-                src="/images/home loan/06.jpg"
+                src="/images/home loan/images/02.jpg"
                 alt="Why Consider Balance Transfer"
-                className="w-full max-w-2xl h-auto mb-4 md:mb-0 md:ml-6 rounded-lg shadow-xl"
+                className="w-full max-w-xs h-auto mb-4 md:mb-0 md:ml-6 rounded-lg shadow-xl"
               />
               {/* Text Content */}
               <ul className="space-y-4 text-lg text-gray-700 leading-relaxed mt-4 md:mr-6">

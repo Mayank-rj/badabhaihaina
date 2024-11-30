@@ -32,7 +32,7 @@ const LoanAgainstProperty = () => {
             </h2>
             <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0">
               <img
-                src="/images/loan-against-property/intro.jpg"
+                src="/images/loan against prop/01.jpg"
                 alt="Loan Against Property"
                 className="w-full max-w-2xl h-auto mb-4 md:mb-0 md:mr-6 rounded-lg shadow-xl"
               />
