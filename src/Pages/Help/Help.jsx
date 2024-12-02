@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {menuData} from "./../../assets/menuData";
+import { menuData } from "./../../assets/menuData";
 
 // FAQ Accordion Item Component
 const FaqItem = ({ question, answer }) => {
@@ -96,6 +96,55 @@ const Help = () => {
             We are here to guide you through the process and make it as easy as
             possible to secure a loan or insurance policy that suits your needs.
           </p>
+        </section>
+
+        <section className="bg-blue-50 py-16 px-6">
+          <div className="max-w-6xl mx-auto text-center">
+            <div className="space-y-8">
+              {[
+                {
+                  step: "Explore Your Options",
+                  description:
+                    "Browse through our detailed guides on car loans, home loans, and other financial products. Learn about different types of loans, interest rates, and eligibility criteria to make an informed decision.",
+                },
+                {
+                  step: "Compare Deals",
+                  description:
+                    "Use our comparison tools to evaluate offers from top lenders. Compare interest rates, loan tenures, processing fees, and other features to find the deal that works best for you.",
+                },
+                {
+                  step: "Personalized Recommendations",
+                  description:
+                    "Share your preferences and financial details to receive tailored loan recommendations. Our intelligent system matches you with the most suitable lenders based on your requirements.",
+                },
+                {
+                  step: "Calculate Your EMIs",
+                  description:
+                    "Utilize our EMI calculators to estimate your monthly payments. This helps you plan your finances better and ensures that your loan is within your budget.",
+                },
+                {
+                  step: "Submit Your Query",
+                  description:
+                    'Have questions? Need further assistance? Click on the "Submit Query" button to get expert advice. Our team is here to guide you every step of the way.',
+                },
+                {
+                  step: "Apply Easily",
+                  description:
+                    "Once you've selected the ideal loan, proceed to the application process directly through our platform. Enjoy a seamless, secure, and hassle-free experience.",
+                },
+              ].map((item, idx) => (
+                <div
+                  key={idx}
+                  className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                >
+                  <h3 className="text-2xl font-semibold text-blue-500 mb-2">
+                    {item.step}
+                  </h3>
+                  <p className="text-gray-700">{item.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
       </div>
     </div>
