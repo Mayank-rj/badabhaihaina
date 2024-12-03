@@ -91,9 +91,7 @@ const CarLoan = () => {
 
           {/* Content Section */}
           <div>
-            <h2 className="text-4xl font-bold text-blue-600 mb-6">
-              Types of Car Loans
-            </h2>
+            <h2 className="text-3xl font-semibold mb-4">Types of Car Loans</h2>
             <ul className="space-y-6">
               {[
                 {
@@ -130,9 +128,7 @@ const CarLoan = () => {
                 },
               ].map((item, idx) => (
                 <li key={idx} className="bg-white p-6 rounded-lg shadow-md">
-                  <h3 className="text-2xl font-semibold text-blue-500 mb-2">
-                    {item.title}
-                  </h3>
+                  <h3 className="text-2xl font-semibold mb-2">{item.title}</h3>
                   <p className="text-gray-700 mb-4">{item.description}</p>
                   {item.features.length > 0 && (
                     <ul className="list-disc list-inside text-gray-600 space-y-2">
