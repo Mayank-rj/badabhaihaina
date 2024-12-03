@@ -78,6 +78,76 @@ const CarLoan = () => {
         </div>
       </section>
 
+      <section className="bg-gray-50 py-16 px-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          {/* Image Section */}
+          <div className="flex justify-center">
+            <img
+              src="/images/Car Loan/06.jpg"
+              alt="Factors to Know"
+              className="rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+            />
+          </div>
+
+          {/* Content Section */}
+          <div>
+            <h2 className="text-4xl font-bold text-blue-600 mb-6">
+              Types of Car Loans
+            </h2>
+            <ul className="space-y-6">
+              {[
+                {
+                  title: "New Car Loan",
+                  description:
+                    "Designed for the purchase of brand-new vehicles, these loans often come with lower interest rates and higher loan-to-value ratios.",
+                  features: [
+                    "Attractive offers on the latest models",
+                    "Customizable repayment tenures",
+                    "Higher loan amounts based on the car’s value",
+                  ],
+                },
+                {
+                  title: "Used Car Loan",
+                  description:
+                    "Tailored for purchasing pre-owned vehicles, these loans are ideal for budget-conscious buyers.",
+                  features: [
+                    "Competitive interest rates",
+                    "Financing up to 80-90% of the car’s value",
+                    "Loans available for certified pre-owned cars",
+                  ],
+                },
+                {
+                  title: "Zero Down Payment Car Loan",
+                  description:
+                    "For those who prefer not to pay upfront, this loan covers the entire cost of the car. However, it may involve slightly higher interest rates.",
+                  features: [],
+                },
+                {
+                  title: "Refinanced Car Loan",
+                  description:
+                    "Ideal for reducing the interest burden on your existing car loan. Refinancing helps in lowering EMIs and managing finances better.",
+                  features: [],
+                },
+              ].map((item, idx) => (
+                <li key={idx} className="bg-white p-6 rounded-lg shadow-md">
+                  <h3 className="text-2xl font-semibold text-blue-500 mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-700 mb-4">{item.description}</p>
+                  {item.features.length > 0 && (
+                    <ul className="list-disc list-inside text-gray-600 space-y-2">
+                      {item.features.map((feature, i) => (
+                        <li key={i}>{feature}</li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <Cta
         heading="Take the Next Step Toward Your Dream Car"
         message="Drive your dream car without breaking the bank! Explore our tailored
