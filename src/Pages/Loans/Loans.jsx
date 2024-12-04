@@ -8,7 +8,7 @@ import LoanAgainstProperty from "../../Components/LoanAgainstProp/LoanAgainstPro
 import TermLoan from "../../Components/TermLoan/TermLoan";
 import FlexiOD from "../../Components/FlexiOD/FlexiOD";
 import WorkingCapital from "../../Components/WorkingCapital/WorkingCapital";
-import MsmeLoan from "../../Components/MSMELoan/MSMELoan";
+import MsmeLoan from "../../Components/MSMELoan/MsmeLoan";
 
 export default function Loans({ type }) {
   return (
