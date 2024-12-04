@@ -82,7 +82,7 @@ const Menu = ({ title, items, onClick, isMobile }) => {
       <div className="group ms-8 h-20 flex items-center">
         <Link
           to="/"
-          onClick={() => onClick(title)}
+          onClick={(e) => onClick(e,title)}
           className="text-gray-600 hover:text-gray-800"
         >
           {title}
@@ -108,7 +108,8 @@ const Navbar = () => {
   const isMobile = window.innerWidth <= 768; // Adjust as needed
   console.log(isMobileMenuOpen);
 
-  const handleMenuClick = (title) => {
+  const handleMenuClick = (e,title) => {
+    e.preventDefault();
     if (isMobile) setActiveMenu(title);
   };
 

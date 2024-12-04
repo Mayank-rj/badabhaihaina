@@ -6,6 +6,7 @@ import HomeLoan from "../../Components/HomeLoan/HomeLoan";
 import PersonalLoan from "../../Components/PerosnalLoan/PersonalLoan";
 import LoanAgainstProperty from "../../Components/LoanAgainstProp/LoanAgainstProp";
 import TermLoan from "../../Components/TermLoan/TermLoan";
+import FlexiOD from "../../Components/FlexiOD/FlexiOD";
 
 export default function Loans({ type }) {
   console.log(type);
@@ -27,6 +28,8 @@ export default function Loans({ type }) {
         <LoanAgainstProperty />
       ) : type === "car" ? (
         <CarLoan />
+      ) : type === "flexi-od" ? (
+        <FlexiOD />
       ) : (
         "Loans"
       )}
