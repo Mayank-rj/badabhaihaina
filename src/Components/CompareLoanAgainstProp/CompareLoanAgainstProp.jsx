@@ -26,6 +26,11 @@ const CompareLoanAgainstProp = () => {
           Compare Loan Against Property Rates: Unlock the Value of Your Assets
         </h1>
 
+        <Cta
+          heading="Loan Against Property: Compare and Choose Wisely"
+          message="To make an informed choice, compare lenders on factors like interest rates, loan-to-value (LTV) ratios, processing fees, and repayment terms. This ensures you secure the best deal while meeting your financial goals efficiently."
+        />
+
         {/* Introduction */}
         <AnimatedSection animationClass="animate-slide-in-left">
           <section className="mb-20">
@@ -128,11 +133,6 @@ const CompareLoanAgainstProp = () => {
             </div>
           </section>
         </AnimatedSection>
-
-        <Cta
-          heading="Loan Against Property: Compare and Choose Wisely"
-          message="To make an informed choice, compare lenders on factors like interest rates, loan-to-value (LTV) ratios, processing fees, and repayment terms. This ensures you secure the best deal while meeting your financial goals efficiently."
-        />
 
         {/* Steps to Compare */}
         <AnimatedSection animationClass="animate-slide-in-left">

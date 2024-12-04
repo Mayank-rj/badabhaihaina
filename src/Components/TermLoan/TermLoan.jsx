@@ -26,6 +26,11 @@ const TermLoan = () => {
           Understanding Term Loans: Your Guide to Unsecured Financing
         </h1>
 
+        <Cta
+          heading="A Flexible Financing Solution"
+          message="Term loans are ideal for purchasing equipment, expanding businesses, or managing large personal expenses. With flexible repayment options and competitive interest rates, they offer a reliable way to achieve your financial goals."
+        />
+
         {/* Introduction */}
         <AnimatedSection animationClass="animate-slide-in-left">
           <section className="mb-20">
@@ -93,11 +98,6 @@ const TermLoan = () => {
             </div>
           </section>
         </AnimatedSection>
-
-        <Cta
-          heading="A Flexible Financing Solution"
-          message="Term loans are ideal for purchasing equipment, expanding businesses, or managing large personal expenses. With flexible repayment options and competitive interest rates, they offer a reliable way to achieve your financial goals."
-        />
 
         {/* Key Factors to Compare */}
         <AnimatedSection animationClass="animate-fade-in">

@@ -25,6 +25,11 @@ const LoanAgainstProperty = () => {
           Loan Against Property: Unlock the Value of Your Assets
         </h1>
 
+        <Cta
+          heading="Loan Against Property: Unlock the Value of Your Assets"
+          message=" Whether it's for expanding your business, funding education, or handling medical emergencies, LAP provides a secured and versatile financing option."
+        />
+
         {/* Introduction */}
         <AnimatedSection animationClass="animate-slide-in-left">
           <section className="mb-20">
@@ -96,11 +101,6 @@ const LoanAgainstProperty = () => {
             </ul>
           </section>
         </AnimatedSection>
-
-        <Cta
-          heading="Loan Against Property: Unlock the Value of Your Assets"
-          message=" Whether it's for expanding your business, funding education, or handling medical emergencies, LAP provides a secured and versatile financing option."
-        />
 
         {/* Steps to Apply */}
         <AnimatedSection animationClass="animate-slide-in-left">

@@ -25,6 +25,11 @@ const PersonalLoan = () => {
           Personal Loan: Your Financial Freedom, Simplified
         </h1>
 
+        <Cta
+          heading=" Your Financial Companion for Every Need"
+          message="With minimal documentation, flexible repayment options, and quick disbursement, personal loans are ideal for meeting short-term or urgent financial requirements."
+        />
+
         {/* Introduction */}
         <AnimatedSection animationClass="animate-slide-in-left">
           <section className="mb-20">
@@ -84,11 +89,6 @@ const PersonalLoan = () => {
             </ul>
           </section>
         </AnimatedSection>
-
-        <Cta
-          heading=" Your Financial Companion for Every Need"
-          message="With minimal documentation, flexible repayment options, and quick disbursement, personal loans are ideal for meeting short-term or urgent financial requirements."
-        />
 
         {/* Types of Personal Loans */}
         <AnimatedSection animationClass="animate-fade-in">

@@ -25,6 +25,11 @@ const MsmeLoan = () => {
           MSME Loans: Empowering Small and Medium Enterprises
         </h1>
 
+        <Cta
+          heading="Tailored Financial Support for MSMEs"
+          message="With MSME loans, small businesses can access the funds needed for growth, innovation, and sustainability. Take the next step toward achieving your business dreams with customized financing solutions."
+        />
+
         {/* Introduction */}
         <AnimatedSection animationClass="animate-slide-in-left">
           <section className="mb-20">
@@ -39,11 +44,12 @@ const MsmeLoan = () => {
               />
               <p className="text-gray-700 text-lg leading-relaxed mt-4">
                 <strong className="text-blue-700">MSME Loans</strong> are
-                specifically designed to provide financial support to Micro, Small,
-                and Medium Enterprises (MSMEs). These loans are tailored to meet
-                the unique requirements of businesses, such as purchasing
-                machinery, expanding operations, or managing working capital. MSME
-                loans aim to promote entrepreneurship and boost economic growth.
+                specifically designed to provide financial support to Micro,
+                Small, and Medium Enterprises (MSMEs). These loans are tailored
+                to meet the unique requirements of businesses, such as
+                purchasing machinery, expanding operations, or managing working
+                capital. MSME loans aim to promote entrepreneurship and boost
+                economic growth.
               </p>
             </div>
           </section>
@@ -65,28 +71,25 @@ const MsmeLoan = () => {
                   types of loans.
                 </li>
                 <li>
-                  <strong className="text-blue-700">Easy Accessibility</strong>
-                  : Financial institutions provide customized schemes to make
+                  <strong className="text-blue-700">Easy Accessibility</strong>:
+                  Financial institutions provide customized schemes to make
                   loans accessible to small businesses.
                 </li>
                 <li>
-                  <strong className="text-blue-700">Collateral-Free Options</strong>
+                  <strong className="text-blue-700">
+                    Collateral-Free Options
+                  </strong>
                   : Many MSME loans are unsecured, requiring no collateral.
                 </li>
                 <li>
-                  <strong className="text-blue-700">Government Support</strong>
-                  : Various government initiatives and subsidies are available to
+                  <strong className="text-blue-700">Government Support</strong>:
+                  Various government initiatives and subsidies are available to
                   support MSMEs.
                 </li>
               </ul>
             </div>
           </section>
         </AnimatedSection>
-
-        <Cta
-          heading="Tailored Financial Support for MSMEs"
-          message="With MSME loans, small businesses can access the funds needed for growth, innovation, and sustainability. Take the next step toward achieving your business dreams with customized financing solutions."
-        />
 
         {/* How MSME Loans Help Businesses */}
         <AnimatedSection animationClass="animate-fade-in">
@@ -103,15 +106,20 @@ const MsmeLoan = () => {
               <ul className="text-lg text-gray-700 leading-relaxed space-y-4 mt-4">
                 <li>
                   <strong className="text-blue-700">Business Expansion:</strong>{" "}
-                  Use funds to open new branches, hire more staff, or enter new markets.
+                  Use funds to open new branches, hire more staff, or enter new
+                  markets.
                 </li>
                 <li>
-                  <strong className="text-blue-700">Infrastructure Development:</strong>{" "}
-                  Invest in modern infrastructure or upgrade existing facilities.
+                  <strong className="text-blue-700">
+                    Infrastructure Development:
+                  </strong>{" "}
+                  Invest in modern infrastructure or upgrade existing
+                  facilities.
                 </li>
                 <li>
                   <strong className="text-blue-700">Machinery Purchase:</strong>{" "}
-                  Acquire advanced machinery or technology to boost productivity.
+                  Acquire advanced machinery or technology to boost
+                  productivity.
                 </li>
                 <li>
                   <strong className="text-blue-700">Working Capital:</strong>{" "}
@@ -133,14 +141,13 @@ const MsmeLoan = () => {
                 <li>
                   Businesses registered as Micro, Small, or Medium Enterprises.
                 </li>
-                <li>
-                  Startups and entrepreneurs with a clear business plan.
-                </li>
+                <li>Startups and entrepreneurs with a clear business plan.</li>
                 <li>
                   Organizations with a valid business license and registration.
                 </li>
                 <li>
-                  Applicants with a good credit score and financial track record.
+                  Applicants with a good credit score and financial track
+                  record.
                 </li>
               </ol>
             </div>
@@ -169,11 +176,13 @@ const MsmeLoan = () => {
                   tailored solutions for small businesses.
                 </li>
                 <li>
-                  <strong className="text-blue-700">ICICI Bank:</strong> Provides
-                  flexible loan terms and quick disbursal.
+                  <strong className="text-blue-700">ICICI Bank:</strong>{" "}
+                  Provides flexible loan terms and quick disbursal.
                 </li>
                 <li>
-                  <strong className="text-blue-700">State Bank of India (SBI):</strong>{" "}
+                  <strong className="text-blue-700">
+                    State Bank of India (SBI):
+                  </strong>{" "}
                   Known for government-supported MSME schemes.
                 </li>
               </ul>
@@ -188,12 +197,12 @@ const MsmeLoan = () => {
               Conclusion
             </h2>
             <p className="text-black-300 leading-relaxed mb-6">
-              <strong className="text-blue-700">MSME Loans</strong> are a lifeline
-              for small businesses seeking to grow, innovate, and succeed. With
-              tailored loan options, flexible repayment terms, and support from
-              financial institutions, MSMEs can achieve their goals and make a
-              lasting impact. Start your journey today by exploring the best MSME
-              loan options for your business.
+              <strong className="text-blue-700">MSME Loans</strong> are a
+              lifeline for small businesses seeking to grow, innovate, and
+              succeed. With tailored loan options, flexible repayment terms, and
+              support from financial institutions, MSMEs can achieve their goals
+              and make a lasting impact. Start your journey today by exploring
+              the best MSME loan options for your business.
             </p>
           </section>
         </AnimatedSection>

@@ -1,5 +1,5 @@
 import { useInView } from "react-intersection-observer";
-import { Cta } from "../cta/Cta";
+import { Cta } from "../../cta/Cta";
 
 const AnimatedSection = ({ children, animationClass }) => {
   const { ref, inView } = useInView({ triggerOnce: true });
@@ -16,179 +16,183 @@ const AnimatedSection = ({ children, animationClass }) => {
   );
 };
 
-const WorkingCapital = () => {
+const CarInsurance = () => {
   return (
     <div className="bg-gradient-to-br min-h-screen py-10">
       <div className="max-w-6xl mx-auto px-4">
         {/* Header */}
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-blue-700 bg-blue-200 py-4 px-6 rounded-lg shadow-md mb-16 animate-bounce-in">
-          Working Capital Loans: Powering Your Business Growth
+          Car Insurance: Protecting Your Vehicle and Your Peace of Mind
         </h1>
-
         <Cta
-          heading="Tailored Solutions for Growing Businesses"
-          message="Working capital loans are tailored to support businesses of all sizes. With flexible terms and competitive interest rates, they provide the financial cushion you need to navigate business challenges effectively."
+          heading="Comprehensive Coverage for Your Car"
+          message="With a range of plans to suit your needs, car insurance provides financial security and peace of mind. Choose a plan that offers robust coverage, competitive premiums, and reliable support."
         />
-
         {/* Introduction */}
         <AnimatedSection animationClass="animate-slide-in-left">
           <section className="mb-20">
             <h2 className="text-2xl font-semibold text-blue-600 text-center mb-10">
-              What Are Working Capital Loans?
+              What is Car Insurance?
             </h2>
             <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0">
               <img
-                src="/images/working-capital/01.jpg"
-                alt="Working Capital Overview"
+                src="/images/car-insurance/01.jpg"
+                alt="Car Insurance Overview"
                 className="w-full max-w-2xl h-auto mb-4 md:mb-0 md:mr-6 rounded-lg shadow-xl"
               />
               <p className="text-gray-700 text-lg leading-relaxed mt-4">
-                A{" "}
-                <strong className="text-blue-700">Working Capital Loan</strong>{" "}
-                is designed to help businesses cover their day-to-day
-                operational expenses. These loans are ideal for managing cash
-                flow, purchasing inventory, or bridging gaps during financial
-                crunches. With flexible repayment options, working capital loans
-                ensure that your business continues running smoothly even in
-                challenging times.
+                <strong className="text-blue-700">Car Insurance</strong> is a
+                financial safety net that provides coverage against damage to
+                your vehicle, third-party liabilities, and personal accident
+                risks. Whether it’s a fender bender or a major accident, car
+                insurance ensures you’re financially protected from unexpected
+                costs.
               </p>
             </div>
           </section>
         </AnimatedSection>
 
-        {/* Benefits of Working Capital Loans */}
+        {/* Benefits of Car Insurance */}
         <AnimatedSection animationClass="animate-slide-in-right">
           <section className="mb-20">
             <h2 className="text-2xl font-semibold text-blue-600 mb-10">
-              Why Consider a Working Capital Loan?
+              Why is Car Insurance Important?
             </h2>
             <div className="flex flex-col md:flex-row-reverse items-center md:items-start space-y-6 md:space-y-0">
               <ul className="text-gray-700 text-lg leading-relaxed list-disc pl-5">
                 <li>
                   <strong className="text-blue-700">
-                    Maintain Business Continuity
-                  </strong>
-                  : Helps bridge short-term gaps in cash flow and ensures smooth
-                  operations.
+                    Financial Protection:
+                  </strong>{" "}
+                  Covers the costs of repair or replacement in case of damage.
                 </li>
                 <li>
                   <strong className="text-blue-700">
-                    Quick Access to Funds
-                  </strong>
-                  : Offers rapid disbursal to address urgent business needs.
+                    Third-Party Liability:
+                  </strong>{" "}
+                  Protects you from legal and financial liability arising from
+                  accidents involving other people or property.
                 </li>
                 <li>
                   <strong className="text-blue-700">
-                    No Collateral Required
-                  </strong>
-                  : Many working capital loans are unsecured, removing the need
-                  for collateral.
+                    Personal Accident Cover:
+                  </strong>{" "}
+                  Provides coverage for medical expenses and accidental death or
+                  disability.
                 </li>
                 <li>
-                  <strong className="text-blue-700">Flexible Usage</strong>:
-                  Funds can be used for diverse purposes, including payroll,
-                  inventory, and vendor payments.
+                  <strong className="text-blue-700">Peace of Mind:</strong>{" "}
+                  Drive confidently knowing you’re covered against unforeseen
+                  events.
                 </li>
               </ul>
             </div>
           </section>
         </AnimatedSection>
 
-        {/* How to Use Working Capital Loans */}
+        {/* Types of Car Insurance */}
         <AnimatedSection animationClass="animate-fade-in">
           <section className="mb-20">
             <h2 className="text-2xl font-semibold text-blue-600 text-center mb-10">
-              How Can You Use a Working Capital Loan?
+              Types of Car Insurance Plans
             </h2>
             <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0">
               <img
-                src="/images/working-capital/02.jpg"
-                alt="Uses of Working Capital Loan"
+                src="/images/car-insurance/02.jpg"
+                alt="Car Insurance Types"
                 className="w-full max-w-xs h-auto mb-4 md:mb-0 md:ml-6 rounded-lg shadow-xl"
               />
               <ul className="text-lg text-gray-700 leading-relaxed space-y-4 mt-4">
                 <li>
                   <strong className="text-blue-700">
-                    Inventory Management:
+                    Third-Party Liability:
                   </strong>{" "}
-                  Purchase raw materials or stock up on inventory during peak
-                  demand periods.
+                  Mandatory coverage for damages caused to another person or
+                  their property.
                 </li>
                 <li>
-                  <strong className="text-blue-700">Payroll Support:</strong>{" "}
-                  Ensure timely payment of employee salaries without disruption.
+                  <strong className="text-blue-700">
+                    Comprehensive Coverage:
+                  </strong>{" "}
+                  Includes third-party liability as well as protection against
+                  damages to your own vehicle.
                 </li>
                 <li>
-                  <strong className="text-blue-700">Seasonal Expenses:</strong>{" "}
-                  Cover the additional expenses that arise during festive or
-                  peak seasons.
+                  <strong className="text-blue-700">Pay-As-You-Drive:</strong> A
+                  flexible policy where premiums are based on your driving
+                  habits and mileage.
                 </li>
                 <li>
-                  <strong className="text-blue-700">Operational Costs:</strong>{" "}
-                  Pay for utilities, rent, and other day-to-day expenses.
+                  <strong className="text-blue-700">
+                    Zero Depreciation Add-On:
+                  </strong>{" "}
+                  Ensures full claim on the cost of car parts without factoring
+                  in depreciation.
                 </li>
               </ul>
             </div>
           </section>
         </AnimatedSection>
 
-        {/* Eligibility and Tips */}
+        {/* Steps to Choose a Policy */}
         <AnimatedSection animationClass="animate-slide-in-left">
           <section className="mb-20">
             <h2 className="text-2xl font-semibold text-blue-600 text-center mb-10">
-              Eligibility Criteria & Tips for Approval
+              How to Choose the Right Car Insurance
             </h2>
             <div className="flex flex-col md:flex-row items-start space-y-6 md:space-y-0">
               <ol className="list-decimal list-inside text-lg text-gray-700 leading-relaxed mt-4 md:mr-6">
+                <li>Compare policies from different insurers online.</li>
                 <li>
-                  Maintain a strong credit score to enhance your chances of
-                  approval.
+                  Assess your requirements, such as comprehensive coverage or
+                  add-ons like roadside assistance.
                 </li>
                 <li>
-                  Ensure your business has consistent cash flow and financial
-                  stability.
+                  Check for affordable premiums and the claim settlement ratio
+                  of the insurer.
                 </li>
                 <li>
-                  Prepare essential documents such as business registration,
-                  income tax returns, and bank statements.
+                  Read reviews to understand the quality of customer service.
                 </li>
                 <li>
-                  Compare lenders to find competitive interest rates and
-                  repayment terms.
+                  Opt for a policy that offers easy renewal and flexible payment
+                  options.
                 </li>
               </ol>
             </div>
           </section>
         </AnimatedSection>
 
-        {/* Popular Providers */}
+        {/* Leading Car Insurance Providers */}
         <AnimatedSection animationClass="animate-fade-in">
           <section className="mb-20">
             <h2 className="text-2xl font-semibold text-blue-600 text-center mb-10">
-              Top Working Capital Loan Providers in India
+              Top Car Insurance Providers in India
             </h2>
             <div className="flex flex-col items-center space-y-6">
               <img
-                src="/images/working-capital/03.jpg"
+                src="/images/car-insurance/03.jpg"
                 alt="Top Providers"
                 className="w-full h-auto rounded-lg shadow-xl max-w-xl"
               />
               <ul className="list-disc list-inside text-lg text-gray-700 leading-relaxed mt-4">
                 <li>
-                  <strong className="text-blue-700">HDFC Bank:</strong> Known
-                  for fast processing and attractive rates.
+                  <strong className="text-blue-700">ICICI Lombard:</strong>{" "}
+                  Known for hassle-free claims and extensive coverage options.
                 </li>
                 <li>
-                  <strong className="text-blue-700">ICICI Bank:</strong> Offers
-                  customizable repayment options for businesses.
+                  <strong className="text-blue-700">Bajaj Allianz:</strong>{" "}
+                  Offers a wide range of add-ons and efficient customer service.
                 </li>
                 <li>
-                  <strong className="text-blue-700">SBI:</strong> Provides
-                  working capital solutions with long tenures.
+                  <strong className="text-blue-700">HDFC ERGO:</strong> Features
+                  affordable premiums and a high claim settlement ratio.
                 </li>
                 <li>
-                  <strong className="text-blue-700">Bajaj Finserv:</strong>{" "}
-                  Focuses on quick approval and minimal documentation.
+                  <strong className="text-blue-700">
+                    New India Assurance:
+                  </strong>{" "}
+                  A trusted provider with competitive rates and broad coverage.
                 </li>
               </ul>
             </div>
@@ -202,11 +206,11 @@ const WorkingCapital = () => {
               Conclusion
             </h2>
             <p className="text-black-300 leading-relaxed mb-6">
-              A <strong className="text-blue-700">Working Capital Loan</strong>{" "}
-              can empower your business to thrive even in uncertain times. By
-              addressing short-term financial needs, you can focus on strategic
-              growth and long-term success. Contact us today to discover the
-              best working capital solutions tailored to your needs.
+              Car insurance is essential for protecting your vehicle and
+              ensuring peace of mind while driving. By choosing the right
+              policy, you can safeguard yourself against financial risks and
+              enjoy stress-free journeys. Start comparing plans today to find
+              the best car insurance solution for you!
             </p>
           </section>
         </AnimatedSection>
@@ -215,4 +219,4 @@ const WorkingCapital = () => {
   );
 };
 
-export default WorkingCapital;
+export default CarInsurance;

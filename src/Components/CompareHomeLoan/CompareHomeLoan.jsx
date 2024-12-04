@@ -26,6 +26,10 @@ const CompareHomeLoan = () => {
           Compare Home Loans: Find the Best Option for Your Dream Home
         </h1>
 
+        <Cta
+          heading="Find Your Perfect Fit for a Dream Home"
+          message="Explore and compare the best home loan options tailored to your needs. Secure the perfect loan to make your dream home a reality!"
+        />
         {/* Introduction */}
         <AnimatedSection animationClass="animate-slide-in-left">
           <section className="mb-20">
@@ -138,11 +142,6 @@ const CompareHomeLoan = () => {
             </div>
           </section>
         </AnimatedSection>
-
-        <Cta
-          heading="Find Your Perfect Fit for a Dream Home"
-          message="Explore and compare the best home loan options tailored to your needs. Secure the perfect loan to make your dream home a reality!"
-        />
 
         {/* Compare Home Loans */}
         <AnimatedSection animationClass="animate-slide-in-left">

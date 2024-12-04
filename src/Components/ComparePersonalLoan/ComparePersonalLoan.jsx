@@ -26,6 +26,11 @@ const ComparePersonalLoan = () => {
           Compare Personal Loan Rates: Choose the Best Option for Your Needs
         </h1>
 
+        <Cta
+          heading="Find the Best Fit for Your Financial Needs"
+          message="Comparing personal loan offers is crucial to finding the one with the best interest rate, tenure, and terms that align with your financial goals. Explore your options and make an informed decision to manage your expenses smartly."
+        />
+
         {/* Introduction */}
         <AnimatedSection animationClass="animate-slide-in-left">
           <section className="mb-20">
@@ -126,11 +131,6 @@ const ComparePersonalLoan = () => {
             </div>
           </section>
         </AnimatedSection>
-
-        <Cta
-          heading="Find the Best Fit for Your Financial Needs"
-          message="Comparing personal loan offers is crucial to finding the one with the best interest rate, tenure, and terms that align with your financial goals. Explore your options and make an informed decision to manage your expenses smartly."
-        />
 
         {/* Steps to Compare */}
         <AnimatedSection animationClass="animate-slide-in-left">

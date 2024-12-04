@@ -63,20 +63,16 @@ const router = createBrowserRouter([
         element: <Loans type="compare-loan-against-property" />,
       },
       {
-        path: "insurance",
-        element: <Insurance />,
-      },
-      {
         path: "term-life-insurance",
         element: <Insurance type="term-life" />,
       },
       {
         path: "car-insurance",
-        element: <Insurance type="car" />,
+        element: <Insurance type="car-insurance" />,
       },
       {
         path: "health-insurance",
-        element: <Insurance type="health" />,
+        element: <Insurance type="health-insurance" />,
       },
       {
         path: "two-wheeler-insurance",
@@ -84,11 +80,11 @@ const router = createBrowserRouter([
       },
       {
         path: "travel-insurance",
-        element: <Insurance type="travel" />,
+        element: <Insurance type="travel-insurance" />,
       },
       {
         path: "home-insurance",
-        element: <Insurance type="home" />,
+        element: <Insurance type="home-insurance" />,
       },
       {
         path: "stock-insurance",

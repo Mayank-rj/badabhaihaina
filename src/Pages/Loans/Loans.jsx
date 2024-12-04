@@ -11,7 +11,6 @@ import WorkingCapital from "../../Components/WorkingCapital/WorkingCapital";
 import MsmeLoan from "../../Components/MSMELoan/MSMELoan";
 
 export default function Loans({ type }) {
-  console.log(type);
   return (
     <>
       {type === "home-loan" ? (

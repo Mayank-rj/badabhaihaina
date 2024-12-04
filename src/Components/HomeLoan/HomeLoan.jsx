@@ -25,7 +25,10 @@ const HomeLoan = () => {
         <h1 className="text-4xl font-bold text-center text-blue-700 bg-blue-200 py-4 px-6 rounded-lg shadow-md mb-16 animate-bounce-in">
           Home Loan: Turn Your Dream Home Into Reality
         </h1>
-
+        <Cta
+          heading="Building Your Dream Home, Made Easy"
+          message="Owning a house is a significant milestone, and a house loan can make this dream a reality. With flexible repayment options, competitive interest rates, and tailor-made solutions, house loans empower you to finance your new home, renovation, or construction with ease. Explore plans suited to your needs and take a step closer to your dream home today."
+        />
         {/* Introduction */}
         <AnimatedSection animationClass="animate-slide-in-left">
           <section className="mb-20">
@@ -182,11 +185,6 @@ const HomeLoan = () => {
             </div>
           </section>
         </AnimatedSection>
-
-        <Cta
-          heading="Building Your Dream Home, Made Easy"
-          message="Owning a house is a significant milestone, and a house loan can make this dream a reality. With flexible repayment options, competitive interest rates, and tailor-made solutions, house loans empower you to finance your new home, renovation, or construction with ease. Explore plans suited to your needs and take a step closer to your dream home today."
-        />
 
         <AnimatedSection animationClass="animate-fade-in">
           <section className="mb-20">
