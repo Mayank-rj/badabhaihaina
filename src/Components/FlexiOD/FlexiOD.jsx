@@ -77,7 +77,8 @@ const FlexiOD = () => {
           Flexi Overdraft: The Smart Way to Borrow
         </h1>
         <p className="text-base sm:text-lg text-gray-300 animate-slideUp">
-          Learn how Flexi OD can provide instant access to funds with flexible repayment options.
+          Learn how Flexi OD can provide instant access to funds with flexible
+          repayment options.
         </p>
       </header>
 
@@ -85,10 +86,13 @@ const FlexiOD = () => {
       <section className="mt-10 w-full max-w-4xl text-center">
         <h2 className="text-3xl font-semibold mb-4">Introduction</h2>
         <p className="text-black-300 leading-relaxed mb-6">
-          Flexi Overdraft (Flexi OD) is a financial facility that allows you to withdraw funds as needed within a pre-approved limit. Interest is charged only on the utilized amount, making it an ideal solution for short-term financial requirements.
+          Flexi Overdraft (Flexi OD) is a financial facility that allows you to
+          withdraw funds as needed within a pre-approved limit. Interest is
+          charged only on the utilized amount, making it an ideal solution for
+          short-term financial requirements.
         </p>
         <img
-          src="/images/FlexiOd/01.jpg"
+          src="/images/flexi od/01.jpg"
           alt="Flexi Overdraft Introduction"
           className="rounded-lg shadow-lg w-full transition-transform duration-300 hover:scale-105"
         />
@@ -115,7 +119,7 @@ const FlexiOD = () => {
             ))}
           </ul>
           <img
-            src="/images/FlexiOd/02.jpg"
+            src="/images/flexi od/02.jpg"
             alt="Factors to Consider"
             className="rounded-lg max-w-xs shadow-lg transition-transform duration-300 hover:scale-105"
           />
@@ -126,7 +130,7 @@ const FlexiOD = () => {
       <section className="bg-gray-50 py-16 px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <img
-            src="/images/FlexiOd/03.jpg"
+            src="/images/flexi od/03.png"
             alt="Types of Overdrafts"
             className="rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
           />
@@ -163,7 +167,7 @@ const FlexiOD = () => {
         </h2>
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <img
-            src="/images/FlexiOd/04.jpg"
+            src="/images/flexi od/04.jpg"
             alt="Where to Apply for Flexi OD"
             className="rounded-lg shadow-lg w-full lg:w-1/2 transition-transform duration-300 hover:scale-105"
           />
@@ -179,10 +183,13 @@ const FlexiOD = () => {
       <section className="mt-10 w-full max-w-4xl text-center mb-10">
         <h2 className="text-3xl font-semibold mb-4">Conclusion</h2>
         <p className="text-black-300 leading-relaxed mb-6">
-          Flexi Overdraft is a versatile financial tool that caters to both personal and business needs. By understanding the terms, comparing lenders, and choosing a suitable limit, you can manage your finances efficiently and stay financially secure.
+          Flexi Overdraft is a versatile financial tool that caters to both
+          personal and business needs. By understanding the terms, comparing
+          lenders, and choosing a suitable limit, you can manage your finances
+          efficiently and stay financially secure.
         </p>
         <img
-          src="/images/FlexiOd/05.jpg"
+          src="/images/flexi od/05.jpg"
           alt="Conclusion"
           className="rounded-lg shadow-lg w-full transition-transform duration-300 hover:scale-105"
         />
