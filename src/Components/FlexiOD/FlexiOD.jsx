@@ -1,5 +1,5 @@
 import { Cta } from "../cta/Cta";
-import "./flexiOd.css";
+import "./FlexiOD.css";
 
 const FlexiOD = () => {
   const factors = [
