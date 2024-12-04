@@ -1,4 +1,5 @@
 import { useInView } from "react-intersection-observer";
+import { Cta } from "../cta/Cta";
 // import "./CompareLoanAgainstProperty.css";
 
 const AnimatedSection = ({ children, animationClass }) => {
@@ -127,6 +128,11 @@ const CompareLoanAgainstProp = () => {
             </div>
           </section>
         </AnimatedSection>
+
+        <Cta
+          heading="Loan Against Property: Compare and Choose Wisely"
+          message="To make an informed choice, compare lenders on factors like interest rates, loan-to-value (LTV) ratios, processing fees, and repayment terms. This ensures you secure the best deal while meeting your financial goals efficiently."
+        />
 
         {/* Steps to Compare */}
         <AnimatedSection animationClass="animate-slide-in-left">

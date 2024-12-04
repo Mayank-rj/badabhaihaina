@@ -1,4 +1,5 @@
 import { useInView } from "react-intersection-observer";
+import { Cta } from "../cta/Cta";
 
 const AnimatedSection = ({ children, animationClass }) => {
   const { ref, inView } = useInView({ triggerOnce: true });
@@ -95,6 +96,11 @@ const LoanAgainstProperty = () => {
             </ul>
           </section>
         </AnimatedSection>
+
+        <Cta
+          heading="Loan Against Property: Unlock the Value of Your Assets"
+          message=" Whether it's for expanding your business, funding education, or handling medical emergencies, LAP provides a secured and versatile financing option."
+        />
 
         {/* Steps to Apply */}
         <AnimatedSection animationClass="animate-slide-in-left">
