@@ -1,4 +1,5 @@
 import { useInView } from "react-intersection-observer";
+import { Cta } from "../cta/Cta";
 // import "./animation.css";
 
 const AnimatedSection = ({ children, animationClass }) => {
@@ -181,6 +182,11 @@ const HomeLoan = () => {
             </div>
           </section>
         </AnimatedSection>
+
+        <Cta
+          heading="Building Your Dream Home, Made Easy"
+          message="Owning a house is a significant milestone, and a house loan can make this dream a reality. With flexible repayment options, competitive interest rates, and tailor-made solutions, house loans empower you to finance your new home, renovation, or construction with ease. Explore plans suited to your needs and take a step closer to your dream home today."
+        />
 
         <AnimatedSection animationClass="animate-fade-in">
           <section className="mb-20">

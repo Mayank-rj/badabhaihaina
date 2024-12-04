@@ -1,4 +1,5 @@
 import { useInView } from "react-intersection-observer";
+import { Cta } from "../cta/Cta";
 
 const AnimatedSection = ({ children, animationClass }) => {
   const { ref, inView } = useInView({ triggerOnce: true });
@@ -83,6 +84,11 @@ const PersonalLoan = () => {
             </ul>
           </section>
         </AnimatedSection>
+
+        <Cta
+          heading=" Your Financial Companion for Every Need"
+          message="With minimal documentation, flexible repayment options, and quick disbursement, personal loans are ideal for meeting short-term or urgent financial requirements."
+        />
 
         {/* Types of Personal Loans */}
         <AnimatedSection animationClass="animate-fade-in">

@@ -1,4 +1,5 @@
 import { useInView } from "react-intersection-observer";
+import { Cta } from "../cta/Cta";
 // import "./TermLoanPage.css";
 
 const AnimatedSection = ({ children, animationClass }) => {
@@ -92,6 +93,11 @@ const TermLoan = () => {
             </div>
           </section>
         </AnimatedSection>
+
+        <Cta
+          heading="A Flexible Financing Solution"
+          message="Term loans are ideal for purchasing equipment, expanding businesses, or managing large personal expenses. With flexible repayment options and competitive interest rates, they offer a reliable way to achieve your financial goals."
+        />
 
         {/* Key Factors to Compare */}
         <AnimatedSection animationClass="animate-fade-in">

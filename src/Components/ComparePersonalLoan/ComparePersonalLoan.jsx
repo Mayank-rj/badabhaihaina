@@ -1,4 +1,5 @@
 import { useInView } from "react-intersection-observer";
+import { Cta } from "../cta/Cta";
 // import "./ComparePersonalLoan.css";
 
 const AnimatedSection = ({ children, animationClass }) => {
@@ -125,6 +126,11 @@ const ComparePersonalLoan = () => {
             </div>
           </section>
         </AnimatedSection>
+
+        <Cta
+          heading="Find the Best Fit for Your Financial Needs"
+          message="Comparing personal loan offers is crucial to finding the one with the best interest rate, tenure, and terms that align with your financial goals. Explore your options and make an informed decision to manage your expenses smartly."
+        />
 
         {/* Steps to Compare */}
         <AnimatedSection animationClass="animate-slide-in-left">
