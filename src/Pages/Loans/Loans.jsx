@@ -7,6 +7,8 @@ import PersonalLoan from "../../Components/PerosnalLoan/PersonalLoan";
 import LoanAgainstProperty from "../../Components/LoanAgainstProp/LoanAgainstProp";
 import TermLoan from "../../Components/TermLoan/TermLoan";
 import FlexiOD from "../../Components/FlexiOD/FlexiOD";
+import WorkingCapital from "../../Components/WorkingCapital/WorkingCapital";
+import MsmeLoan from "../../Components/MSMELoan/MSMELoan";
 
 export default function Loans({ type }) {
   console.log(type);
@@ -22,6 +24,10 @@ export default function Loans({ type }) {
         <ComparePersonalLoan />
       ) : type === "term-loan" ? (
         <TermLoan />
+      ) : type === "working-capital" ? (
+        <WorkingCapital />
+      ) : type === "msme" ? (
+        <MsmeLoan />
       ) : type === "compare-loan-against-property" ? (
         <CompareLoanAgainstProp />
       ) : type === "loan-against-property" ? (
