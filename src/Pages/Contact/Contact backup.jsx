@@ -2,9 +2,11 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useEffect, useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [popupVisible, setPopupVisible] = useState(false);
+  const [emailError, setEmailError] = useState(null);
 
   const formRef = useRef(null);
 
@@ -29,6 +31,29 @@ const Contact = () => {
       document.body.classList.remove("overflow-hidden");
     };
   }, [popupVisible]);
+
+  const sendEmail = (values) => {
+    console.log(values)
+    // Send the email via EmailJS
+    emailjs
+      .sendForm(
+        "service_o9rh46v", // Your EmailJS service ID
+        "template_o9rz3xn", // Your EmailJS template ID
+        formRef.current, // Values passed from the form
+       "S7PGq8xNosikyM4ST" // your emailjs private key
+      )
+      .then(
+        (response) => {
+          console.log("Email sent successfully", response);
+          setPopupVisible(true);
+          setEmailError(null);
+        },
+        (error) => {
+          console.error("Error sending email", error);
+          setEmailError("There was an error sending your message. Please try again.");
+        }
+      );
+  };
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-100 p-8">
@@ -70,8 +95,8 @@ const Contact = () => {
           validationSchema={validationSchema}
           onSubmit={(values, { resetForm }) => {
             console.log("Form submitted:", values);
-            console.log("useRef FormData:", formRef.current)
-            setPopupVisible(true);
+            sendEmail(values);
+            // setPopupVisible(true);
             resetForm();
             setTimeout(() => setPopupVisible(false), 3000);
           }}
@@ -170,7 +195,7 @@ const Contact = () => {
                   className="text-red-500 text-sm"
                 />
               </div>
-
+              {emailError && <p className="text-red-500 text-sm">{emailError}</p>}
               <button
                 type="submit"
                 className="w-full bg-purple-600 text-white py-2 px-4 rounded-md hover:bg-purple-700 transition duration-300"

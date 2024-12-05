@@ -106,7 +106,7 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // state for hamburger menu
 
   const isMobile = window.innerWidth <= 768; // Adjust as needed
-  console.log(isMobileMenuOpen);
+  // console.log(isMobileMenuOpen);
 
   const handleMenuClick = (e,title) => {
     e.preventDefault();
