@@ -38,7 +38,7 @@ const TwoWheelerInsurance = () => {
             </h2>
             <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0">
               <img
-                src="/images/two-wheeler-insurance/01.jpg"
+                src="/images/two wheeler insurance/01.jpg"
                 alt="Two-Wheeler Insurance Overview"
                 className="w-full max-w-2xl h-auto mb-4 md:mb-0 md:mr-6 rounded-lg shadow-xl"
               />
@@ -97,9 +97,9 @@ const TwoWheelerInsurance = () => {
             </h2>
             <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0">
               <img
-                src="/images/two-wheeler-insurance/02.jpg"
+                src="/images/two wheeler insurance/02.jpg"
                 alt="Types of Two-Wheeler Insurance"
-                className="w-full max-w-xs h-auto mb-4 md:mb-0 md:ml-6 rounded-lg shadow-xl"
+                className="w-full max-w-xs h-auto mr-5 mb-4 md:mb-0 md:ml-6 rounded-lg shadow-xl"
               />
               <ul className="text-lg text-gray-700 leading-relaxed space-y-4 mt-4">
                 <li>
@@ -179,7 +179,7 @@ const TwoWheelerInsurance = () => {
             </h2>
             <div className="flex flex-col items-center space-y-6">
               <img
-                src="/images/two-wheeler-insurance/03.jpg"
+                src="/images/two wheeler insurance/03.jpg"
                 alt="Top Two-Wheeler Insurance Providers"
                 className="w-full h-auto rounded-lg shadow-xl max-w-xl"
               />
