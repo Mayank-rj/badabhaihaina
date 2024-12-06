@@ -38,7 +38,7 @@ const WorkingCapital = () => {
             </h2>
             <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0">
               <img
-                src="/images/working-capital/01.jpg"
+                src="/images/working capital loan/01.jpg"
                 alt="Working Capital Overview"
                 className="w-full max-w-2xl h-auto mb-4 md:mb-0 md:mr-6 rounded-lg shadow-xl"
               />
@@ -102,9 +102,9 @@ const WorkingCapital = () => {
             </h2>
             <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0">
               <img
-                src="/images/working-capital/02.jpg"
+                src="/images/working capital loan/02.jpg"
                 alt="Uses of Working Capital Loan"
-                className="w-full max-w-xs h-auto mb-4 md:mb-0 md:ml-6 rounded-lg shadow-xl"
+                className="w-full max-w-xs h-auto mb-4 mr-5 md:mb-0 md:ml-6 rounded-lg shadow-xl"
               />
               <ul className="text-lg text-gray-700 leading-relaxed space-y-4 mt-4">
                 <li>
@@ -169,7 +169,7 @@ const WorkingCapital = () => {
             </h2>
             <div className="flex flex-col items-center space-y-6">
               <img
-                src="/images/working-capital/03.jpg"
+                src="/images/working capital loan/03.jpg"
                 alt="Top Providers"
                 className="w-full h-auto rounded-lg shadow-xl max-w-xl"
               />
