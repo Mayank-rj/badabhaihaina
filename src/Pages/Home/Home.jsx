@@ -1,15 +1,47 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./home.css";
 
 export default function Home() {
+  const images = [
+    "public/home-img/hero-sec-1.jpg",
+    "public/home-img/hero-sec-2.jpg",
+    "public/home-img/hero-sec-3.jpg",
+    "public/home-img/hero-sec-4.jpg",
+    "public/home-img/hero-sec-5.jpg",
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <div className="container relative">
-        <div className="h-[70vh] flex justify-center items-center w-screen hero-img" />
-        <div className="tag-line">
-          <p className="text-6xl">Where Money Works for You!</p>
+        <div
+          className="h-[70vh] flex justify-center items-center w-screen bg-cover bg-center transition-all duration-1000"
+          style={{ backgroundImage: `url(${images[currentIndex]})` }}
+        >
+          <div className="absolute inset-0 bg-black bg-opacity-40" />{" "}
+          <div className="absolute right-0 top-1/2 transform -translate-y-1/2 text-white p-8 border-4 border-red-500">
+            <h1 className="md:text-6xl font-bold mb-4">
+              Discover Your Financial Freedom
+            </h1>
+            <p className="text-xl mb-6">
+              We offer flexible loan solutions to help you achieve your dreams.
+            </p>
+            <button className="bg-blue-500 text-white py-2 px-6 rounded-full text-lg transition duration-300 ease-in-out hover:bg-blue-700">
+              Get Started
+            </button>
+            <p className="text-right">hello</p>
+          </div>
         </div>
       </div>
+
       <section className="py-16 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -88,6 +120,15 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Image Break */}
+      <div className="w-full">
+        <img
+          src="/home-img/02.jpg"
+          alt="Section Break"
+          className="w-full h-48 md:h-64 object-cover"
+        />
+      </div>
 
       <section className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 py-16 px-6 text-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -219,6 +260,15 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Image Break */}
+      <div className="w-full">
+        <img
+          src="/home-img/04.jpg"
+          alt="Section Break"
+          className="w-full h-48 md:h-64 object-cover"
+        />
+      </div>
+
       <section className="py-16 px-6 bg-gradient-to-r from-blue-500 via-teal-500 to-green-500 text-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -331,6 +381,15 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      {/* Image Break */}
+      <div className="w-full">
+        <img
+          src="/home-img/03.jpg"
+          alt="Section Break"
+          className="w-full h-48 md:h-64 object-cover"
+        />
+      </div>
 
       <section className="py-16 px-6 bg-gradient-to-r from-gray-100 via-indigo-200 to-teal-300">
         <div className="max-w-7xl mx-auto text-center">
