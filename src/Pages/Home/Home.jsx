@@ -8,31 +8,37 @@ export default function Home() {
       heading: "Welcome to Our Website",
       para: "our journey starts here. Explore now!",
       img: "/home-img/hero-sec.jpg",
+      url: "home-insurance"
     },
     {
       heading: "Explore Our Services",
       para: "our journey starts here. Explore now!",
       img: "/home-img/hero-sec-1.jpg",
+      url: "term-life-insurance"
     },
     {
       heading: "Discover Amazing Deals",
       para: "our journey starts here. Explore now!",
       img: "/home-img/hero-sec-2.jpg",
+      url: "personal-loan"
     },
     {
       heading: "Join Our Community",
       para: "our journey starts here. Explore now!",
       img: "/home-img/hero-sec-3.jpg",
+      url: "car-loan"
     },
     {
       heading: "Take Your Business to the Next Level",
       para: "our journey starts here. Explore now!",
       img: "/home-img/hero-sec-4.jpg",
+      url: "health-insurance"
     },
     {
       heading: "Take Your Business to the Next Level",
       para: "our journey starts here. Explore now!",
       img: "/home-img/hero-sec-5.jpg",
+      url: "loan-against-property"
     },
   ];
 

@@ -3,6 +3,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { NavLink } from "react-router-dom";
 
 const SwiperSlider = ({ images }) => {
   return (
@@ -31,9 +32,12 @@ const SwiperSlider = ({ images }) => {
                 className="w-full h-full object-cover"
               />
               <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30"></div>
-              <div className="absolute top-1/2 left-16 transform -translate-y-1/2 text-white max-w-lg">
+              <div className="absolute top-1/2 right-32 transform -translate-y-1/2 text-white text-right max-w-lg">
                 <h2 className="text-4xl font-bold">{hero?.heading}</h2>
-                <p className="mt-4 text-lg">{hero?.para}</p>
+                <p className="mt-4 mb-8 text-lg">{hero?.para}</p>
+                <NavLink className="bg-white text-blue-600 font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition-all duration-300" to={hero.url}>
+                  Learn More
+                </NavLink>
               </div>
             </div>
           </SwiperSlide>
