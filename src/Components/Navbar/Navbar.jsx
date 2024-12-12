@@ -60,7 +60,11 @@ const iconMapping = {
   ),
 };
 
-const DropDown = ({ item }) => {
+const DropDown = ({ item, setIsMobileMenuOpen, setActiveMenu }) => {
+  const handleItemClick = () => {
+    setIsMobileMenuOpen(false);
+    setActiveMenu(null);
+  };
   return (
     <div className="flex flex-col items-start">
       <div className="text-purple-600">
@@ -68,7 +72,11 @@ const DropDown = ({ item }) => {
           <FaUserTie className="h-5 w-5 text-purple-600" />
         )}
       </div>
-      <Link to={item.path} className="text-gray-800 font-semibold">
+      <Link
+        to={item.path}
+        onClick={handleItemClick}
+        className="text-gray-800 font-semibold"
+      >
         {item.label}
       </Link>
       <p className="text-gray-500 text-sm">{item.description}</p>
@@ -82,7 +90,7 @@ const Menu = ({ title, items, onClick, isMobile }) => {
       <div className="group ms-8 h-20 flex items-center">
         <Link
           to="/"
-          onClick={(e) => onClick(e,title)}
+          onClick={(e) => onClick(e, title)}
           className="text-gray-600 hover:text-gray-800"
         >
           {title}
@@ -108,9 +116,12 @@ const Navbar = () => {
   const isMobile = window.innerWidth <= 768; // Adjust as needed
   // console.log(isMobileMenuOpen);
 
-  const handleMenuClick = (e,title) => {
+  const handleMenuClick = (e, title) => {
     e.preventDefault();
-    if (isMobile) setActiveMenu(title);
+    if (isMobile) {
+      setActiveMenu(title);
+      setIsMobileMenuOpen(false);
+    }
   };
 
   const handleBackClick = () => {
@@ -208,7 +219,12 @@ const Navbar = () => {
 
             <div className="grid grid-cols-2 gap-4">
               {menuData[activeMenu].map((item, index) => (
-                <DropDown key={index} item={{ ...item, path: item.path }} />
+                <DropDown
+                  key={index}
+                  item={{ ...item, path: item.path }}
+                  setIsMobileMenuOpen={setIsMobileMenuOpen}
+                  setActiveMenu={setActiveMenu}
+                />
               ))}
             </div>
           </div>

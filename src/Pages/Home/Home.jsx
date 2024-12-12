@@ -1,46 +1,109 @@
 // import React, { useState, useEffect } from "react";
 import "./home.css";
 import SwiperSlider from "../../Components/SwiperSlider/SwiperSlider";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import { sendEmail } from "../../assets/sendEmail";
+import { ThankYouModal } from "../../Components/ThankYouModal/ThankYouModal";
+import { useEffect, useRef, useState } from "react";
+import { EnquiryModal } from "../../Components/EnquiryModal/EnquiryModal";
 
 export default function Home() {
+  const [isThankYouModalOpen, setIsThankYouModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const formRef = useRef();
+
   const heroContent = [
     {
       heading: "Welcome to Our Website",
       para: "our journey starts here. Explore now!",
       img: "/home-img/hero-sec.jpg",
-      url: "home-insurance"
+      url: "home-insurance",
     },
     {
       heading: "Explore Our Services",
       para: "our journey starts here. Explore now!",
       img: "/home-img/hero-sec-1.jpg",
-      url: "term-life-insurance"
+      url: "term-life-insurance",
     },
     {
       heading: "Discover Amazing Deals",
       para: "our journey starts here. Explore now!",
       img: "/home-img/hero-sec-2.jpg",
-      url: "personal-loan"
+      url: "personal-loan",
     },
     {
       heading: "Join Our Community",
       para: "our journey starts here. Explore now!",
       img: "/home-img/hero-sec-3.jpg",
-      url: "car-loan"
+      url: "car-loan",
     },
     {
       heading: "Take Your Business to the Next Level",
       para: "our journey starts here. Explore now!",
       img: "/home-img/hero-sec-4.jpg",
-      url: "health-insurance"
+      url: "health-insurance",
     },
     {
       heading: "Take Your Business to the Next Level",
       para: "our journey starts here. Explore now!",
       img: "/home-img/hero-sec-5.jpg",
-      url: "loan-against-property"
+      url: "loan-against-property",
     },
   ];
+
+  const handleCloseThankYouModal = () => {
+    setIsThankYouModalOpen(false);
+  };
+
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      contact: "",
+      message: "",
+    },
+    validationSchema: Yup.object({
+      name: Yup.string().required("Full name is required"),
+      email: Yup.string()
+        .email("Invalid email address")
+        .required("Email is required"),
+      contact: Yup.string().required("Contact number is required"),
+      message: Yup.string().required("Message is required"),
+    }),
+    onSubmit: (values) => {
+      sendEmail(formRef.current); // Send data after form submission
+      formik.resetForm(); // Reset form after submission
+      setIsThankYouModalOpen(true); // Open the ThankYouModal
+    },
+  });
+
+  const handleSuccess = () => {
+    // Handle success logic (like showing a confirmation message)
+    console.log("Enquiry Submitted Successfully!");
+    setIsModalOpen(false); // Close the modal on success
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false); // Close modal when user closes it
+  };
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true); // Open modal when button is clicked
+  };
+
+  // Disable body scroll when modal is open
+  useEffect(() => {
+    if (isThankYouModalOpen) {
+      document.documentElement.style.overflow = "hidden"; // Disable scroll
+    } else {
+      document.documentElement.style.overflow = "auto"; // Enable scroll
+    }
+
+    return () => {
+      document.documentElement.style.overflow = "auto"; // Reset scroll when modal is unmounted
+    };
+  }, [isThankYouModalOpen]);
 
   return (
     <>
@@ -82,7 +145,7 @@ export default function Home() {
           {/* Right Query Form */}
           <div className="bg-teal-500 rounded-lg shadow-lg p-8 text-white">
             <h3 className="text-2xl font-bold mb-6">Submit Your Query</h3>
-            <form>
+            <form onSubmit={formik.handleSubmit} ref={formRef}>
               <div className="mb-4">
                 <label htmlFor="name" className="block font-medium mb-2">
                   Full Name
@@ -92,7 +155,13 @@ export default function Home() {
                   id="name"
                   placeholder="Enter your name"
                   className="w-full border border-teal-300 rounded-lg px-4 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-teal-700"
+                  {...formik.getFieldProps("name")}
                 />
+                {formik.touched.name && formik.errors.name ? (
+                  <div className="text-red-500 text-sm">
+                    {formik.errors.name}
+                  </div>
+                ) : null}
               </div>
               <div className="mb-4">
                 <label htmlFor="email" className="block font-medium mb-2">
@@ -103,7 +172,30 @@ export default function Home() {
                   id="email"
                   placeholder="Enter your email"
                   className="w-full border border-teal-300 rounded-lg px-4 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-teal-700"
+                  {...formik.getFieldProps("email")}
                 />
+                {formik.touched.email && formik.errors.email ? (
+                  <div className="text-red-500 text-sm">
+                    {formik.errors.email}
+                  </div>
+                ) : null}
+              </div>
+              <div className="mb-4">
+                <label htmlFor="contact" className="block font-medium mb-2">
+                  Contact
+                </label>
+                <input
+                  type="text"
+                  id="contact"
+                  placeholder="Enter your contact number"
+                  className="w-full border border-teal-300 rounded-lg px-4 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-teal-700"
+                  {...formik.getFieldProps("contact")}
+                />
+                {formik.touched.contact && formik.errors.contact ? (
+                  <div className="text-red-500 text-sm">
+                    {formik.errors.contact}
+                  </div>
+                ) : null}
               </div>
               <div className="mb-4">
                 <label htmlFor="message" className="block font-medium mb-2">
@@ -114,7 +206,13 @@ export default function Home() {
                   placeholder="Write your query"
                   rows="4"
                   className="w-full border border-teal-300 rounded-lg px-4 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-teal-700"
+                  {...formik.getFieldProps("message")}
                 ></textarea>
+                {formik.touched.message && formik.errors.message ? (
+                  <div className="text-red-500 text-sm">
+                    {formik.errors.message}
+                  </div>
+                ) : null}
               </div>
               <button
                 type="submit"
@@ -186,12 +284,12 @@ export default function Home() {
               </li>
             </ul>
             <div className="mt-8">
-              <a
-                href="#"
+              <button
                 className="inline-block bg-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-purple-600 transition"
+                onClick={handleOpenModal}
               >
                 Apply Now
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -282,28 +380,15 @@ export default function Home() {
             <h2 className="text-4xl font-extrabold mb-6">
               Loan Against Property (LAP)
             </h2>
-            <p className="text-lg mb-6">
-              A Loan Against Property (LAP) is a secured financial product that
-              allows individuals or businesses to borrow funds by mortgaging
-              their residential, commercial, or industrial property as
-              collateral. It is a popular choice for those seeking high-value
-              loans at relatively low interest rates.
-            </p>
-            <p className="text-lg mb-6">
-              The loan amount typically depends on the property’s market value,
-              with lenders offering a percentage of the value as the loan, known
-              as the Loan-to-Value (LTV) ratio. Borrowers can use the funds for
-              various purposes, including business expansion, debt
-              consolidation, medical emergencies, or educational expenses.
-            </p>
-            <p className="text-lg">
-              One of the key advantages of LAP is its affordability, as the
-              secured nature of the loan reduces the risk for lenders, leading
-              to competitive interest rates and flexible repayment tenures.
-              However, failure to repay can result in foreclosure, making timely
-              repayments crucial. Compare offers carefully to ensure the best
-              deal and leverage your property equity effectively.
-            </p>
+            {[
+              "A Loan Against Property (LAP) is a secured financial product that allows individuals or businesses to borrow funds by mortgaging their residential, commercial, or industrial property as collateral. It is a popular choice for those seeking high-value loans at relatively low interest rates.",
+              "The loan amount typically depends on the property’s market value, with lenders offering a percentage of the value as the loan, known as the Loan-to-Value (LTV) ratio. Borrowers can use the funds for various purposes, including business expansion, debt consolidation, medical emergencies, or educational expenses.",
+              "One of the key advantages of LAP is its affordability, as the secured nature of the loan reduces the risk for lenders, leading to competitive interest rates and flexible repayment tenures. However, failure to repay can result in foreclosure, making timely repayments crucial. Compare offers carefully to ensure the best deal and leverage your property equity effectively.",
+            ].map((content, index) => (
+              <p className="text-lg mb-6" key={index}>
+                {content}
+              </p>
+            ))}
           </div>
 
           {/* Right Side: Highlight Box */}
@@ -312,19 +397,16 @@ export default function Home() {
               Why Choose a Loan Against Property?
             </h3>
             <ul className="list-disc list-inside space-y-4">
-              <li className="text-lg">
-                **High-value loans** at relatively low interest rates.
-              </li>
-              <li className="text-lg">
-                Flexible repayment tenures to suit financial planning.
-              </li>
-              <li className="text-lg">
-                Funds can be used for diverse purposes, from business expansion
-                to emergencies.
-              </li>
-              <li className="text-lg">
-                Leverages the equity of your property without losing ownership.
-              </li>
+              {[
+                "**High-value loans** at relatively low interest rates.",
+                "Flexible repayment tenures to suit financial planning.",
+                "Funds can be used for diverse purposes, from business expansion to emergencies.",
+                "Leverages the equity of your property without losing ownership.",
+              ].map((content, i) => (
+                <li className="text-lg" key={i}>
+                  {content}
+                </li>
+              ))}
             </ul>
             <div className="absolute inset-0 bg-gradient-to-t from-gray-200 to-transparent opacity-30 rounded-lg pointer-events-none"></div>
           </div>
@@ -418,7 +500,7 @@ export default function Home() {
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                 Types of Insurance
               </h3>
-              <ul className="list-disc text-left text-gray-600 space-y-2">
+              <ul className="list-disc text-left text-gray-600 space-y-2 px-8">
                 <li>Life Insurance</li>
                 <li>Health Insurance</li>
                 <li>Vehicle Insurance</li>
@@ -475,12 +557,12 @@ export default function Home() {
                 Quick and easy approval process for a hassle-free experience
               </li>
             </ul>
-            <a
-              href="#"
+            <button
               className="inline-block bg-teal-500 text-white mt-4 font-bold py-3 px-8 rounded-lg hover:bg-teal-600 transition"
+              onClick={handleOpenModal}
             >
               Apply Now
-            </a>
+            </button>
           </div>
           <p className="text-lg md:text-xl text-gray-700 mt-8">
             Car loans make owning a vehicle more accessible than ever. However,
@@ -490,6 +572,16 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <EnquiryModal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        onSuccess={handleSuccess}
+        setIsThankYouModalOpen={setIsThankYouModalOpen}
+      />
+      <ThankYouModal
+        isOpen={isThankYouModalOpen}
+        onClose={handleCloseThankYouModal}
+      />
     </>
   );
 }

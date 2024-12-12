@@ -2,6 +2,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useEffect, useRef, useState } from "react";
+import { sendEmail } from "../../assets/sendEmail";
 
 const Contact = () => {
   const [popupVisible, setPopupVisible] = useState(false);
@@ -17,16 +18,16 @@ const Contact = () => {
     message: Yup.string().required("Message is required"),
   });
 
+  // Disable body scroll when modal is open
   useEffect(() => {
     if (popupVisible) {
-      document.body.classList.add("overflow-hidden");
+      document.documentElement.style.overflow = "hidden"; // Disable scroll
     } else {
-      document.body.classList.remove("overflow-hidden");
+      document.documentElement.style.overflow = "auto"; // Enable scroll
     }
 
-    // Cleanup when the component unmounts
     return () => {
-      document.body.classList.remove("overflow-hidden");
+      document.documentElement.style.overflow = "auto"; // Reset scroll when modal is unmounted
     };
   }, [popupVisible]);
 
@@ -70,7 +71,8 @@ const Contact = () => {
           validationSchema={validationSchema}
           onSubmit={(values, { resetForm }) => {
             console.log("Form submitted:", values);
-            console.log("useRef FormData:", formRef.current)
+            console.log("useRef FormData:", formRef.current);
+            sendEmail(formRef.current);
             setPopupVisible(true);
             resetForm();
             setTimeout(() => setPopupVisible(false), 3000);
