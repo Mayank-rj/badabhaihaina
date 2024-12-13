@@ -413,7 +413,7 @@ export default function Home() {
                 Types of Insurance
               </h3>
               <ul className="list-disc text-left text-gray-600 space-y-2">
-                <li>Life Insurance</li>
+                <li className="text-right">Life Insurance</li>
                 <li>Health Insurance</li>
                 <li>Vehicle Insurance</li>
                 <li>Property Insurance</li>
