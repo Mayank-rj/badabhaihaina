@@ -103,11 +103,10 @@ export const EnquiryModal = ({
 
     if (validateForm()) {
       console.log("Form submitted", formData);
-      sendEmail(formRef.current);
+      sendEmail(formRef.current, "Enquiry Form");
       onSuccess(); // Trigger success callback to show Thank You modal
       onClose(); // Close the modal after successful submission
       // Reset form data and errors
-      setIsThankYouModalOpen(true);
       setFormData({
         fullName: "",
         contactNumber: "",
@@ -124,6 +123,7 @@ export const EnquiryModal = ({
         securedLoanType: "",
         occupation: "",
       });
+      setIsThankYouModalOpen(true);
     }
   };
 

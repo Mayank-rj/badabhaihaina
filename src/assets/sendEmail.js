@@ -1,11 +1,16 @@
 import emailjs from "@emailjs/browser";
-import { EnquiryModal } from "../Components/EnquiryModal/EnquiryModal";
-export const sendEmail = (data) => {
-  console.log(data);
+
+export const sendEmail = (data, formType) => {
+  // console.log(data, formType);
   emailjs
-    .sendForm("service_2tuirk8", "template_m0ntm39", data, {
-      publicKey: "0BxUCYCAPfCupk8_6",
-    })
+    .sendForm(
+      "service_2tuirk8",
+      formType === "contactForm" ? "template_m0ntm39" : "template_901umik",
+      data,
+      {
+        publicKey: "0BxUCYCAPfCupk8_6",
+      }
+    )
     .then(
       () => {
         console.log("SUCCESS!");
@@ -17,4 +22,5 @@ export const sendEmail = (data) => {
 };
 // EnquiryModal
 // contatct.js
-// home.jsx
+// template_qye5i3l
+//home
