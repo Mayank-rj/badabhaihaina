@@ -72,7 +72,7 @@ export default function Home() {
       message: Yup.string().required("Message is required"),
     }),
     onSubmit: (values) => {
-      sendEmail(formRef.current); // Send data after form submission
+      sendEmail(formRef.current, "contactForm"); // Send data after form submission
       formik.resetForm(); // Reset form after submission
       setIsThankYouModalOpen(true); // Open the ThankYouModal
     },

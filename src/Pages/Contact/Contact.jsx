@@ -72,7 +72,7 @@ const Contact = () => {
           onSubmit={(values, { resetForm }) => {
             console.log("Form submitted:", values);
             console.log("useRef FormData:", formRef.current);
-            sendEmail(formRef.current);
+            sendEmail(formRef.current, "contactForm");
             setPopupVisible(true);
             resetForm();
             setTimeout(() => setPopupVisible(false), 3000);
