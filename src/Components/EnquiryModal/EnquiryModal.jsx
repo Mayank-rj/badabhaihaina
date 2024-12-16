@@ -14,6 +14,7 @@ export const EnquiryModal = ({
     enquiryFor: "",
     unsecuredLoanType: "",
     securedLoanType: "",
+    insurance: "",
     occupation: "",
   });
 
@@ -23,6 +24,7 @@ export const EnquiryModal = ({
     enquiryFor: "",
     unsecuredLoanType: "",
     securedLoanType: "",
+    insurance: "",
     occupation: "",
   });
 
@@ -39,6 +41,16 @@ export const EnquiryModal = ({
     "Loan Against Property",
     "Secured Overdraft Limit",
     "Balance Transfer of Secured Loan",
+  ];
+  const insurance = [
+    "Term Life Insurance",
+    "Car Insurance",
+    "Health Insurance",
+    "Two Wheeler Insurance",
+    "Travel Insurance",
+    "Home Insurance",
+    "Stock Insurance",
+    "Corporate Insurance",
   ];
 
   const handleChange = (e) => {
@@ -88,6 +100,10 @@ export const EnquiryModal = ({
       formErrors.securedLoanType = "Please select a loan type.";
       isValid = false;
     }
+    if (formData.enquiryFor === "Insurance" && !formData.insurance) {
+      formErrors.insurance = "Please select a insurance type.";
+      isValid = false;
+    }
 
     if (!formData.occupation.trim()) {
       formErrors.occupation = "Occupation is required.";
@@ -114,6 +130,7 @@ export const EnquiryModal = ({
         enquiryFor: "",
         unsecuredLoanType: "",
         securedLoanType: "",
+        insurance:"",
         occupation: "",
       });
       setErrors({
@@ -122,6 +139,7 @@ export const EnquiryModal = ({
         enquiryFor: "",
         unsecuredLoanType: "",
         securedLoanType: "",
+        insurance:"",
         occupation: "",
       });
     }
@@ -201,6 +219,7 @@ export const EnquiryModal = ({
                 <option value="">Select Enquiry Type</option>
                 <option value="Unsecured Loan">Unsecured Loan</option>
                 <option value="Secured Loan">Secured Loan</option>
+                <option value="Insurance">Insurance</option>
               </select>
               {errors.enquiryFor && (
                 <span className="text-red-500 text-sm">
@@ -211,7 +230,7 @@ export const EnquiryModal = ({
               {formData.enquiryFor === "Unsecured Loan" && (
                 <div className="mt-2">
                   <label className="block text-sm font-medium text-gray-700">
-                    Select Loan Type
+                    Select Type
                   </label>
                   <select
                     name="unsecuredLoanType"
@@ -219,7 +238,7 @@ export const EnquiryModal = ({
                     onChange={handleChange}
                     className="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg"
                   >
-                    <option value="">Select Loan Type</option>
+                    <option value="">Select Type</option>
                     {unsecuredLoanOptions.map((loanType, index) => (
                       <option key={index} value={loanType}>
                         {loanType}
@@ -237,7 +256,7 @@ export const EnquiryModal = ({
               {formData.enquiryFor === "Secured Loan" && (
                 <div className="mt-2">
                   <label className="block text-sm font-medium text-gray-700">
-                    Select Loan Type
+                    Select Type
                   </label>
                   <select
                     name="securedLoanType"
@@ -245,7 +264,7 @@ export const EnquiryModal = ({
                     onChange={handleChange}
                     className="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg"
                   >
-                    <option value="">Select Loan Type</option>
+                    <option value="">Select Type</option>
                     {securedLoanOptions.map((loanType, index) => (
                       <option key={index} value={loanType}>
                         {loanType}
@@ -255,6 +274,32 @@ export const EnquiryModal = ({
                   {errors.securedLoanType && (
                     <span className="text-red-500 text-sm">
                       {errors.securedLoanType}
+                    </span>
+                  )}
+                </div>
+              )}
+
+{formData.enquiryFor === "Insurance" && (
+                <div className="mt-2">
+                  <label className="block text-sm font-medium text-gray-700">
+                    Select Type
+                  </label>
+                  <select
+                    name="insurance"
+                    value={formData.insurance}
+                    onChange={handleChange}
+                    className="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg"
+                  >
+                    <option value="">Select Type</option>
+                    {insurance.map((loanType, index) => (
+                      <option key={index} value={loanType}>
+                        {loanType}
+                      </option>
+                    ))}
+                  </select>
+                  {errors.insurance && (
+                    <span className="text-red-500 text-sm">
+                      {errors.insurance}
                     </span>
                   )}
                 </div>
