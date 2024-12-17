@@ -50,6 +50,12 @@ export default function Home() {
       img: "/home-img/hero-sec-5.jpg",
       url: "loan-against-property",
     },
+    {
+      heading: "Secure Your Family's Future, Today!",
+      para: "Life is unpredictable, but your loved ones’ security doesn’t have to be.",
+      img: "/home-img/hero-sec-6.jpg",
+      url: "term-life-insurance",
+    },
   ];
 
   const handleCloseThankYouModal = () => {
